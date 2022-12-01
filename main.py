@@ -1,5 +1,3 @@
-# Credit: Kanye West and Caffeine
-
 import json
 import os
 import uuid
