@@ -1,0 +1,33 @@
+{
+    "meta": {
+        "version": "1.0.0",
+        "game_id": "a1a844cc-1730-4a2a-b9d2-c0a82c903d79"
+    },
+    "players": {
+        "player_one": {
+            "name": "ryan",
+            "ta": "47",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "christian",
+            "ta": "16",
+            "grade": "12"
+        }
+    },
+    "first_mover": "christian",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "christian",
+            "ta": "16",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "ryan",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}
