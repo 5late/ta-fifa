@@ -1,6 +1,7 @@
 import json
 import os
 import uuid
+from datetime import datetime
 
 def main():
     print('What is happening')
@@ -34,11 +35,13 @@ def getPlayerInfo(name):
         return ta, grade
 
 def addGameToProfileData(player, player_ta, id, winner, loser):
+    date = datetime.now().strftime("%d/%m/%Y")
     f = open(f'data/players/{player}-{player_ta}.json')
     
     data = json.load(f)
 
     data['games_played'].append(id)
+    data['last_played'] = date
     data['stats']['played'] += 1
 
     if winner == player:
@@ -62,11 +65,13 @@ def addGameToProfile(player_one, player_one_ta, player_two, player_two_ta, id, w
 def createNewGame(player_one_name, player_one_ta, player_one_grade, player_two_name, player_two_ta, player_two_grade, first_mover, first_move, outcome_word, winner_name, winner_ta, winner_grade, loser_name, loser_ta, loser_grade):
     new_game_id = str(uuid.uuid4())
     path = f'data/games/{new_game_id}.json'
+    date = datetime.now().strftime("%d/%m/%Y")
 
     data = {
         "meta": {
-            "version": "1.0.0",
+            "version": "1.0.2",
             "game_id": new_game_id,
+            "date": date
         },
         "players": {
             "player_one": {
@@ -142,10 +147,11 @@ def newGame():
     
 
 def createPlayerFile(name, ta, grade):
+    date = datetime.now().strftime("%d/%m/%Y")
     with open(f'data/players/{name}-{ta}.json', 'w') as file:
         file_content = {
             "meta": {
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "name": name,
                 "ta": ta,
                 "grade": grade
@@ -156,6 +162,7 @@ def createPlayerFile(name, ta, grade):
                 "lost": 0,
                 "draws": 0
             },
+            "last_played": date,
             "games_played":[]
         }
 
