@@ -79,7 +79,7 @@ def checkForPreviousMatch(player_one, player_two, date):
 
     for path in os.listdir(games_path):
         if os.path.isfile(os.path.join(games_path, path)):
-            f = open(path)
+            f = open(os.path.join(games_path,path))
             data = json.load(f)
 
             if data['meta']['date'] == date and data['players']['player_one']['name'] == player_one and data['players']['player_two']['name'] == player_two:
