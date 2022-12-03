@@ -85,8 +85,16 @@ def checkForPreviousMatch(player_one, player_two, date):
             if data['meta']['date'] == date and data['players']['player_one']['name'] == player_one and data['players']['player_two']['name'] == player_two:
                 games.append(data['meta']['game_id'])
     
-    return len(games), games
+    return len(games) + 1, games
+
+def updatePreviousMatches(prev_game_id, current_game_id):
+    with open(f'data/games/{prev_game_id}.json', 'r') as file:
+        data = json.load(file)
+        data['meta']['following_games'].append(current_game_id)
     
+    with open(f'data/games/{prev_game_id}.json', 'w') as file:
+        json.dump(data, file, indent=4)
+
 
 def createNewGame(player_one_name, player_one_ta, player_one_grade, player_two_name, player_two_ta, player_two_grade, first_mover, first_move, outcome_word, winner_name, winner_ta, winner_grade, loser_name, loser_ta, loser_grade):
     new_game_id = str(uuid.uuid4())
@@ -94,14 +102,17 @@ def createNewGame(player_one_name, player_one_ta, player_one_grade, player_two_n
     date = datetime.now().strftime("%d/%m/%Y")
 
     num_prev_games, prev_games = checkForPreviousMatch(player_one_name, player_two_name, date)
+    if num_prev_games > 1:
+        updatePreviousMatches(prev_games[-1], new_game_id)
 
     data = {
         "meta": {
-            "version": "1.0.3",
+            "version": "1.0.4",
             "game_id": new_game_id,
             "date": date,
             "game_number": num_prev_games,
-            "previous_games": prev_games
+            "previous_games": prev_games,
+            "following_games": []
         },
         "players": {
             "player_one": {

@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "be3ee654-5552-4af3-b793-d72c910c03d7",
+        "date": "03/12/2022",
+        "game_number": 1,
+        "previous_games": [
+            "400fcbf2-7d3b-4ab8-ad9d-d5f335b05865"
+        ],
+        "following_games":[]
+    },
+    "players": {
+        "player_one": {
+            "name": "magnus",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "hikaru",
+            "ta": "47",
+            "grade": "12"
+        }
+    },
+    "first_mover": "magnus",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "draw",
+        "winner": {
+            "name": "None",
+            "ta": "None",
+            "grade": "None"
+        },
+        "loser": {
+            "name": "None",
+            "ta": "None",
+            "grade": "None"
+        }
+    }
+}
