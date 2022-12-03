@@ -62,16 +62,46 @@ def addGameToProfile(player_one, player_one_ta, player_two, player_two_ta, id, w
     addGameToProfileData(player_one, player_one_ta, id, winner, loser)
     addGameToProfileData(player_two, player_two_ta, id, winner, loser)
 
+def getNumberOfGamesPlayed():
+    count = 0
+    games_path = './data/games/'
+
+    for path in os.listdir(games_path):
+        if os.path.isfile(os.path.join(games_path, path)):
+            count += 1
+
+    return count
+
+def checkForPreviousMatch(player_one, player_two, date):
+    num_of_games = getNumberOfGamesPlayed()
+    games_path = './data/games/'
+    games = []
+
+    for path in os.listdir(games_path):
+        if os.path.isfile(os.path.join(games_path, path)):
+            f = open(path)
+            data = json.load(f)
+
+            if data['meta']['date'] == date and data['players']['player_one']['name'] == player_one and data['players']['player_two']['name'] == player_two:
+                games.append(data['meta']['game_id'])
+    
+    return len(games), games
+    
+
 def createNewGame(player_one_name, player_one_ta, player_one_grade, player_two_name, player_two_ta, player_two_grade, first_mover, first_move, outcome_word, winner_name, winner_ta, winner_grade, loser_name, loser_ta, loser_grade):
     new_game_id = str(uuid.uuid4())
     path = f'data/games/{new_game_id}.json'
     date = datetime.now().strftime("%d/%m/%Y")
 
+    num_prev_games, prev_games = checkForPreviousMatch(player_one_name, player_two_name, date)
+
     data = {
         "meta": {
-            "version": "1.0.2",
+            "version": "1.0.3",
             "game_id": new_game_id,
-            "date": date
+            "date": date,
+            "game_number": num_prev_games,
+            "previous_games": prev_games
         },
         "players": {
             "player_one": {
