@@ -81,9 +81,14 @@ def checkForPreviousMatch(player_one, player_two, date):
         if os.path.isfile(os.path.join(games_path, path)):
             f = open(os.path.join(games_path,path))
             data = json.load(f)
+            player_one_name = data['players']['player_one']['name']
+            player_two_name = data['players']['player_two']['name']
 
-            if data['meta']['date'] == date and data['players']['player_one']['name'] == player_one and data['players']['player_two']['name'] == player_two:
-                games.append(data['meta']['game_id'])
+            if data['meta']['date'] == date:
+                if player_one_name == player_one and player_two_name == player_two:
+                    games.append(data['meta']['game_id'])
+                if player_one_name == player_two and player_two_name == player_one:
+                    games.append(data['meta']['game_id'])
     
     return len(games) + 1, games
 
@@ -92,8 +97,10 @@ def updatePreviousMatches(prev_game_id, current_game_id):
         data = json.load(file)
         data['meta']['following_games'].append(current_game_id)
     
+    outfile = json.dumps(data, indent=4)
+
     with open(f'data/games/{prev_game_id}.json', 'w') as file:
-        json.dump(data, file, indent=4)
+        file.write(outfile)
 
 
 def createNewGame(player_one_name, player_one_ta, player_one_grade, player_two_name, player_two_ta, player_two_grade, first_mover, first_move, outcome_word, winner_name, winner_ta, winner_grade, loser_name, loser_ta, loser_grade):
