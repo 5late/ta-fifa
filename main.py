@@ -34,6 +34,20 @@ def getPlayerInfo(name):
         
         return ta, grade
 
+def getChangelog(changelog, version):
+    changes = []
+    f = open(f'{changelog}-changelog.txt')
+    lines = f.readlines()
+
+    for i in range(len(lines)):
+        if lines[i].rstrip() == version:
+            for line in lines[i:]:
+                if line == '\n':
+                    break
+                changes.append(line.rstip())
+    
+    return changes
+
 def addGameToProfileData(player, player_ta, id, winner, loser):
     date = datetime.now().strftime("%d/%m/%Y")
     f = open(f'data/players/{player}-{player_ta}.json')
