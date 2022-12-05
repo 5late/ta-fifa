@@ -1,0 +1,18 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "fritz",
+        "ta": "36",
+        "grade": "12"
+    },
+    "stats": {
+        "played": 1,
+        "won": 0,
+        "lost": 1,
+        "draws": 0
+    },
+    "last_played": "05/12/2022",
+    "games_played": [
+        "14b5807b-10c6-4446-b945-c8d0e62e0429"
+    ]
+}
