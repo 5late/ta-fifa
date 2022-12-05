@@ -1,27 +1,27 @@
 {
     "meta": {
         "version": "1.0.4",
-        "game_id": "14b5807b-10c6-4446-b945-c8d0e62e0429",
+        "game_id": "0d83cce1-f549-44e0-8226-c4bec57e9e6f",
         "date": "05/12/2022",
-        "game_number": 1,
-        "previous_games": [],
-        "following_games": [
-            "0d83cce1-f549-44e0-8226-c4bec57e9e6f"
-        ]
+        "game_number": 2,
+        "previous_games": [
+            "14b5807b-10c6-4446-b945-c8d0e62e0429"
+        ],
+        "following_games": []
     },
     "players": {
         "player_one": {
-            "name": "fritz",
-            "ta": "36",
-            "grade": "12"
-        },
-        "player_two": {
             "name": "marcus",
             "ta": "47",
             "grade": "10"
+        },
+        "player_two": {
+            "name": "fritz",
+            "ta": "36",
+            "grade": "12"
         }
     },
-    "first_mover": "marcus",
+    "first_mover": "fritz",
     "first_move": "d",
     "outcome": {
         "outcome_word": "win",
