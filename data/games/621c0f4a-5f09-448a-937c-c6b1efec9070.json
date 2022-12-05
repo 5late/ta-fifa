@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "621c0f4a-5f09-448a-937c-c6b1efec9070",
+        "date": "05/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "6cc586f3-5743-402a-ba4a-a29554fbf5a5"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "natty",
+            "ta": "36",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "akeisha",
+            "ta": "47",
+            "grade": "9"
+        }
+    },
+    "first_mover": "akeisha",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "akeisha",
+            "ta": "47",
+            "grade": "9"
+        },
+        "loser": {
+            "name": "natty",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}

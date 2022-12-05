@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "johnathan",
+        "ta": "47",
+        "grade": "10"
+    },
+    "stats": {
+        "played": 2,
+        "won": 1,
+        "lost": 1,
+        "draws": 0
+    },
+    "last_played": "05/12/2022",
+    "games_played": [
+        "e35aa0b0-4300-4ffc-9d70-f5ab3289d67c",
+        "b428181b-4c10-42c0-b43c-178a822f2d90"
+    ]
+}
