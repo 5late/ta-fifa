@@ -9,7 +9,7 @@
     },
     "players": {
         "player_one": {
-            "name": "alan",
+            "name": "alen",
             "ta": "36",
             "grade": "11"
         },
@@ -19,12 +19,12 @@
             "grade": "12"
         }
     },
-    "first_mover": "alan",
+    "first_mover": "alen",
     "first_move": "d",
     "outcome": {
         "outcome_word": "win",
         "winner": {
-            "name": "alan",
+            "name": "alen",
             "ta": "36",
             "grade": "11"
         },
