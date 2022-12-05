@@ -1,8 +1,11 @@
 {
     "meta": {
-        "version": "1.0.1",
-        "game_id": "a1a844cc-1730-4a2a-b9d2-c0a82c903d79",
-        "date": "02/12/2022"
+        "version": "1.0.4",
+        "game_id": "37b0264e-ecc3-491d-8469-816cb1a3a44b",
+        "date": "04/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": []
     },
     "players": {
         "player_one": {
