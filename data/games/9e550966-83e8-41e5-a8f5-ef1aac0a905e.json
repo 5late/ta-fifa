@@ -1,13 +1,13 @@
 {
     "meta": {
         "version": "1.0.4",
-        "game_id": "49877454-aaa1-488f-9509-605d368d5ef4",
+        "game_id": "9e550966-83e8-41e5-a8f5-ef1aac0a905e",
         "date": "05/12/2022",
-        "game_number": 1,
-        "previous_games": [],
-        "following_games": [
-            "9e550966-83e8-41e5-a8f5-ef1aac0a905e"
-        ]
+        "game_number": 2,
+        "previous_games": [
+            "49877454-aaa1-488f-9509-605d368d5ef4"
+        ],
+        "following_games": []
     },
     "players": {
         "player_one": {
@@ -21,7 +21,7 @@
             "grade": "12"
         }
     },
-    "first_mover": "alen",
+    "first_mover": "sara",
     "first_move": "d",
     "outcome": {
         "outcome_word": "win",

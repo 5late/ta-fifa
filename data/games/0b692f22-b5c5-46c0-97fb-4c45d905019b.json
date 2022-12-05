@@ -1,13 +1,13 @@
 {
     "meta": {
         "version": "1.0.4",
-        "game_id": "8d8b8e14-3c56-4435-b595-c9af9c1902b9",
+        "game_id": "0b692f22-b5c5-46c0-97fb-4c45d905019b",
         "date": "05/12/2022",
-        "game_number": 1,
-        "previous_games": [],
-        "following_games": [
-            "0b692f22-b5c5-46c0-97fb-4c45d905019b"
-        ]
+        "game_number": 2,
+        "previous_games": [
+            "8d8b8e14-3c56-4435-b595-c9af9c1902b9"
+        ],
+        "following_games": []
     },
     "players": {
         "player_one": {
@@ -18,10 +18,10 @@
         "player_two": {
             "name": "tristan",
             "ta": "16",
-            "grade": "11"
+            "grade": "12"
         }
     },
-    "first_mover": "shannon",
+    "first_mover": "tristan",
     "first_move": "d",
     "outcome": {
         "outcome_word": "win",

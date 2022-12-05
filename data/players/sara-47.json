@@ -1,18 +1,19 @@
 {
     "meta": {
         "version": "1.0.1",
-        "name": "sarah",
+        "name": "sara",
         "ta": "47",
         "grade": "12"
     },
     "stats": {
-        "played": 1,
+        "played": 2,
         "won": 0,
-        "lost": 1,
+        "lost": 2,
         "draws": 0
     },
     "last_played": "05/12/2022",
     "games_played": [
-        "49877454-aaa1-488f-9509-605d368d5ef4"
+        "49877454-aaa1-488f-9509-605d368d5ef4",
+        "9e550966-83e8-41e5-a8f5-ef1aac0a905e"
     ]
 }
