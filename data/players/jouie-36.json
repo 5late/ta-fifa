@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "jouie",
+        "ta": "36",
+        "grade": "11"
+    },
+    "stats": {
+        "played": 2,
+        "won": 2,
+        "lost": 0,
+        "draws": 0
+    },
+    "last_played": "06/12/2022",
+    "games_played": [
+        "38065964-2fef-4c9c-a462-0b4eda30d873",
+        "6dc1f787-8bfe-4c27-a5b9-27c17c76d99d"
+    ]
+}

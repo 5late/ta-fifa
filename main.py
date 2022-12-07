@@ -27,10 +27,10 @@ def getPlayerInfo(name):
         if len(possible) > 1:
             print(possible)
             correct = input('Which TA: ')
-            for possiblility in possible:
-                if possiblility.split('-')[1] == correct:
-                    ta = possibility.split('-')[1].rstip()
-                    grade = possiblility.split('-')[2].rstrip()
+            for possibility in possible:
+                if possibility.split('-')[1] == correct:
+                    ta = possibility.split('-')[1].rstrip()
+                    grade = possibility.split('-')[2].rstrip()
         
         return ta, grade
 

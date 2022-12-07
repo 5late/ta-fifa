@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "6dc1f787-8bfe-4c27-a5b9-27c17c76d99d",
+        "date": "06/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "38065964-2fef-4c9c-a462-0b4eda30d873"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "gigi",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "jouie",
+            "ta": "36",
+            "grade": "11"
+        }
+    },
+    "first_mover": "gigi",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jouie",
+            "ta": "36",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "gigi",
+            "ta": "16",
+            "grade": "12"
+        }
+    }
+}

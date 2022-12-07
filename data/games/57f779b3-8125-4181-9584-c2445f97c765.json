@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "57f779b3-8125-4181-9584-c2445f97c765",
+        "date": "06/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "6b279b19-a367-4355-850d-3bdbd27d5745"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "jervin",
+            "ta": "47",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "ann",
+            "ta": "16",
+            "grade": "11"
+        }
+    },
+    "first_mover": "ann",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jervin",
+            "ta": "47",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "ann",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

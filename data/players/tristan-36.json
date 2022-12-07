@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "tristan",
+        "ta": "36",
+        "grade": "9"
+    },
+    "stats": {
+        "played": 2,
+        "won": 0,
+        "lost": 2,
+        "draws": 0
+    },
+    "last_played": "06/12/2022",
+    "games_played": [
+        "9e1cbfcb-54a0-4aa8-9265-eb870e2d65dc",
+        "cf45a8f5-ae37-465e-a07c-d5609885d771"
+    ]
+}
