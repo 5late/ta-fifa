@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "08aed863-817a-4712-b217-1c4d3eeb5d70",
+        "date": "06/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "382d1372-fcf3-428b-b035-8b93af26d755"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "angela",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "logan",
+            "ta": "47",
+            "grade": "12"
+        }
+    },
+    "first_mover": "angela",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "angela",
+            "ta": "16",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "logan",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}
