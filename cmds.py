@@ -82,5 +82,3 @@ def editProfileGrade(name):
                 print(f'Successfully changed grade in game: {game}')
             
             game_file_writable.close()
-                
-        
