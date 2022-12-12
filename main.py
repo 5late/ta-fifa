@@ -2,15 +2,20 @@ import json
 import os
 import uuid
 from datetime import datetime
+import cmds
 
 def main():
     print('What is happening')
     print('1 - New Game')
+    print('2 - Edit Profile Grade')
 
     choice = input('Enter choice: ')
 
     if choice == '1':
         newGame()
+    elif choice == '2':
+        name = input('Enter name: ').lower()
+        cmds.editProfileGrade(name)
 
 def getPlayerInfo(name):
     with open('data/players.txt', 'r') as file:
