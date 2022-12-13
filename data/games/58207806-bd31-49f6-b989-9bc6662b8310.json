@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "58207806-bd31-49f6-b989-9bc6662b8310",
+        "date": "13/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "c99a55bb-762a-4bc8-8ef3-214a251df238"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "sam",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "natty",
+            "ta": "36",
+            "grade": "12"
+        }
+    },
+    "first_mover": "natty",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "natty",
+            "ta": "47",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "sam",
+            "ta": "16",
+            "grade": "12"
+        }
+    }
+}

@@ -1,20 +1,18 @@
 {
     "meta": {
         "version": "1.0.1",
-        "name": "natty",
-        "ta": "36",
+        "name": "sam",
+        "ta": "16",
         "grade": "12"
     },
     "stats": {
-        "played": 4,
+        "played": 2,
         "won": 1,
-        "lost": 3,
+        "lost": 1,
         "draws": 0
     },
     "last_played": "13/12/2022",
     "games_played": [
-        "6cc586f3-5743-402a-ba4a-a29554fbf5a5",
-        "621c0f4a-5f09-448a-937c-c6b1efec9070",
         "c99a55bb-762a-4bc8-8ef3-214a251df238",
         "58207806-bd31-49f6-b989-9bc6662b8310"
     ]
