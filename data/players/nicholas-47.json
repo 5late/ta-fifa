@@ -1,20 +1,18 @@
 {
     "meta": {
         "version": "1.0.1",
-        "name": "ann",
-        "ta": "16",
+        "name": "nicholas",
+        "ta": "47",
         "grade": "11"
     },
     "stats": {
-        "played": 4,
-        "won": 2,
+        "played": 2,
+        "won": 0,
         "lost": 2,
         "draws": 0
     },
     "last_played": "12/12/2022",
     "games_played": [
-        "57f779b3-8125-4181-9584-c2445f97c765",
-        "6b279b19-a367-4355-850d-3bdbd27d5745",
         "16744941-c189-4a2d-8019-87fecea5f886",
         "81ba7b0b-e32d-4a5d-9bf8-fd698c07ea84"
     ]

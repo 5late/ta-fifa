@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "bregar",
+        "ta": "47",
+        "grade": "13"
+    },
+    "stats": {
+        "played": 2,
+        "won": 1,
+        "lost": 1,
+        "draws": 0
+    },
+    "last_played": "12/12/2022",
+    "games_played": [
+        "bd8f6729-902f-433a-b84a-ecad4cd79be1",
+        "3e31648b-e71e-4299-b17d-cd2b4e9dbe6d"
+    ]
+}

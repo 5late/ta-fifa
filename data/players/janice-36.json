@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "janice",
+        "ta": "36",
+        "grade": "11"
+    },
+    "stats": {
+        "played": 2,
+        "won": 2,
+        "lost": 0,
+        "draws": 0
+    },
+    "last_played": "12/12/2022",
+    "games_played": [
+        "c8b12377-3b4b-4e44-a9bf-8d753988149e",
+        "32795d56-c0af-482a-8241-15126e4ec29b"
+    ]
+}

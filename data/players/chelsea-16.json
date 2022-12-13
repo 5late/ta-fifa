@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "chelsea",
+        "ta": "16",
+        "grade": "10"
+    },
+    "stats": {
+        "played": 2,
+        "won": 0,
+        "lost": 2,
+        "draws": 0
+    },
+    "last_played": "12/12/2022",
+    "games_played": [
+        "48ad0c26-ad69-4c29-894e-29c80642097a",
+        "7e04c01c-8141-46bf-bbd5-0a4a48c3673a"
+    ]
+}
