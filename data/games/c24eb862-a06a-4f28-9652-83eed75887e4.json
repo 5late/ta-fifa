@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "c24eb862-a06a-4f28-9652-83eed75887e4",
+        "date": "13/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "4c8c686c-9d9d-408e-939b-a2cac7246ce1"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "mikai",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "christian",
+            "ta": "47",
+            "grade": "10"
+        }
+    },
+    "first_mover": "christian",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "mikai",
+            "ta": "16",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "christian",
+            "ta": "47",
+            "grade": "10"
+        }
+    }
+}

@@ -36,5 +36,7 @@ weathers-16-13
 kelly-47-11
 kip-36-11
 sam-16-12
+christian-47-10
+mikai-16-11
 magnus-16-12
 hikaru-16-12
