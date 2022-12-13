@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "9c864a92-39fe-4e45-9fb5-265213ffa02a",
+        "date": "13/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "fc65e516-2169-440a-971a-11ccb8b2616b"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "nilayah",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "fritz",
+            "ta": "36",
+            "grade": "12"
+        }
+    },
+    "first_mover": "nilayah",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "nilayah",
+            "ta": "16",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "fritz",
+            "ta": "36",
+            "grade": "12"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "tyler",
+        "ta": "16",
+        "grade": "10"
+    },
+    "stats": {
+        "played": 2,
+        "won": 2,
+        "lost": 0,
+        "draws": 0
+    },
+    "last_played": "13/12/2022",
+    "games_played": [
+        "245f6e0b-e4cd-49d5-bf6b-a0dbfb9dd8d7",
+        "bb22ac35-3e86-41db-bf3e-7c6106ad64cd"
+    ]
+}
