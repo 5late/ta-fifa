@@ -3,25 +3,16 @@
 import os
 import json
 
-weathers_played = 0
-weathers_won = 0
-bregar_played = 0
-bregar_won = 0
-sanderson_played = 0
-sanderson_won = 0
-
-nine_wins = 0
-nine_played = 0
-ten_wins = 0
-ten_played = 0
-eleven_wins = 0
-eleven_played = 0
-twelve_wins = 0
-twelve_played = 0
-
 # ta win rate
 def getTaWinRate():
     player_files = os.listdir('data/players')
+
+    weathers_played = 0
+    weathers_won = 0
+    bregar_played = 0
+    bregar_won = 0
+    sanderson_played = 0
+    sanderson_won = 0
 
     for file in player_files:
         if file[-4:] == 'json':
@@ -60,6 +51,16 @@ def taWinRate():
 
 # grade winrate
 def getGradeWinRate():
+
+    nine_wins = 0
+    nine_played = 0
+    ten_wins = 0
+    ten_played = 0
+    eleven_wins = 0
+    eleven_played = 0
+    twelve_wins = 0
+    twelve_played = 0
+
     player_files = os.listdir('data/players')
 
     for file in player_files:
