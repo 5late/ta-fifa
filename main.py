@@ -3,11 +3,14 @@ import os
 import uuid
 from datetime import datetime
 import cmds
+import smart
 
 def main():
     print('What is happening')
     print('1 - New Game')
     print('2 - Edit Profile Grade')
+    print('3 - TA Winrate')
+    print('4 - Grade Winrate')
 
     choice = input('Enter choice: ')
 
@@ -16,6 +19,10 @@ def main():
     elif choice == '2':
         name = input('Enter name: ').lower()
         cmds.editProfileGrade(name)
+    elif choice == '3':
+        smart.taWinRate()
+    elif choice == '4':
+        smart.gradeWinRate()
 
 def getPlayerInfo(name):
     with open('data/players.txt', 'r') as file:

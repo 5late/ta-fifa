@@ -1,20 +1,18 @@
 {
     "meta": {
         "version": "1.0.1",
-        "name": "alen",
-        "ta": "36",
-        "grade": "11"
+        "name": "flordyne",
+        "ta": "47",
+        "grade": "12"
     },
     "stats": {
-        "played": 4,
-        "won": 4,
-        "lost": 0,
+        "played": 2,
+        "won": 0,
+        "lost": 2,
         "draws": 0
     },
     "last_played": "13/12/2022",
     "games_played": [
-        "49877454-aaa1-488f-9509-605d368d5ef4",
-        "9e550966-83e8-41e5-a8f5-ef1aac0a905e",
         "65624b3f-6e6a-4aad-a70e-ec35d7ef9c3d",
         "b76ed424-5dcd-4a70-b886-d018e81b6a8e"
     ]

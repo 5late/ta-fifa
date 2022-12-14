@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "b76ed424-5dcd-4a70-b886-d018e81b6a8e",
+        "date": "13/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "65624b3f-6e6a-4aad-a70e-ec35d7ef9c3d"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "alen",
+            "ta": "36",
+            "grade": "11"
+        }
+    },
+    "first_mover": "alen",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "alen",
+            "ta": "36",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}
