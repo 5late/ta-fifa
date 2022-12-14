@@ -1,20 +1,18 @@
 {
     "meta": {
         "version": "1.0.1",
-        "name": "marcus",
+        "name": "isaiah",
         "ta": "47",
         "grade": "10"
     },
     "stats": {
-        "played": 4,
+        "played": 2,
         "won": 2,
-        "lost": 2,
+        "lost": 0,
         "draws": 0
     },
     "last_played": "13/12/2022",
     "games_played": [
-        "14b5807b-10c6-4446-b945-c8d0e62e0429",
-        "0d83cce1-f549-44e0-8226-c4bec57e9e6f",
         "f6ae7b1d-194a-4fea-950f-e4c014ec989c",
         "eaa467b4-f1f6-4d93-9c9a-22fea424b59e"
     ]
