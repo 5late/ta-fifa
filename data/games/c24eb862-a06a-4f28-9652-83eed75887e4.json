@@ -11,7 +11,7 @@
     },
     "players": {
         "player_one": {
-            "name": "mikai",
+            "name": "makai",
             "ta": "16",
             "grade": "11"
         },
@@ -26,7 +26,7 @@
     "outcome": {
         "outcome_word": "win",
         "winner": {
-            "name": "mikai",
+            "name": "makai",
             "ta": "16",
             "grade": "11"
         },
