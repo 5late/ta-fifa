@@ -11,6 +11,7 @@ def main():
     print('2 - Edit Profile Grade')
     print('3 - TA Winrate')
     print('4 - Grade Winrate')
+    print('5 - Personal Winrate')
 
     choice = input('Enter choice: ')
 
@@ -23,6 +24,8 @@ def main():
         smart.taWinRate()
     elif choice == '4':
         smart.gradeWinRate()
+    elif choice == '5':
+        smart.personalWinRate()
 
 def getPlayerInfo(name):
     with open('data/players.txt', 'r') as file:

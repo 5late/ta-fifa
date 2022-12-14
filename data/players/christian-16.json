@@ -6,13 +6,12 @@
         "grade": "12"
     },
     "stats": {
-        "played": 6,
-        "won": 5,
+        "played": 4,
+        "won": 3,
         "lost": 1,
         "draws": 0
     },
     "games_played": [
-        "37b0264e-ecc3-491d-8469-816cb1a3a44b",
         "74133f86-613e-4441-ad9a-b55dc5ee2959",
         "d36a6eac-d28b-4910-a3e9-b8a5d4854a16",
         "05f5163f-a301-4dde-b255-1e336d6b1ca7",

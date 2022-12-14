@@ -45,6 +45,7 @@ def taWinRate():
     print("TA 47 winrate: " + str(round(bregar_win_rate, 2)) + "%")
     print("TA 36 winrate: " + str(round(sanderson_win_rate, 2)) + "%")
 
+# grade winrate
 def gradeWinRate():
     nine_wins = 0
     nine_played = 0
@@ -92,3 +93,26 @@ def gradeWinRate():
     print(f"Ten winrate: {round(ten_winrate, 2)}%")
     print(f"Eleven winrate: {round(eleven_winrate, 2)}%")
     print(f"Twelve winrate: {round(twelve_winrate, 2)}%")
+
+def getPersonalWinRate(name, ta, grade):
+    file = f'data/players/{name}-{ta}.json'
+
+    won = 0
+    played = 0
+    
+    with open (file, 'r') as f:
+        data = json.load(f)
+
+        won += data['stats']['won']
+        played += data['stats']['played']
+    
+    return won/played * 100
+
+def personalWinRate():
+    name = input('Input Name: ').lower()
+    ta = input('Input TA: ').lower()
+    grade = input('Input Grade: ').lower()
+
+    winrate = getPersonalWinRate(name, ta, grade)
+
+    print(f'Win rate for {name}: {round(winrate, 2)}%')
