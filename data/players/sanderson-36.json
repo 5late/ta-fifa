@@ -1,0 +1,18 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "sanderson",
+        "ta": "36",
+        "grade": "13"
+    },
+    "stats": {
+        "played": 1,
+        "won": 0,
+        "lost": 1,
+        "draws": 0
+    },
+    "last_played": "13/12/2022",
+    "games_played": [
+        "bb22ac35-3e86-41db-bf3e-7c6106ad64cd"
+    ]
+}
