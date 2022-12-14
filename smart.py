@@ -4,7 +4,7 @@ import os
 import json
 
 # ta win rate
-def taWinRate():
+def getTaWinRate():
     weathers_played = 0
     weathers_won = 0
     bregar_played = 0
@@ -41,12 +41,16 @@ def taWinRate():
     bregar_win_rate = (bregar_won/bregar_played) * 100
     sanderson_win_rate = (sanderson_won/sanderson_played) * 100
 
+    return weathers_win_rate, bregar_win_rate, sanderson_win_rate
+
+def taWinRate():
+    weathers_win_rate, bregar_win_rate, sanderson_win_rate = getTaWinRate()
     print("TA 16 winrate: " + str(round(weathers_win_rate, 2)) + "%")
     print("TA 47 winrate: " + str(round(bregar_win_rate, 2)) + "%")
     print("TA 36 winrate: " + str(round(sanderson_win_rate, 2)) + "%")
 
 # grade winrate
-def gradeWinRate():
+def getGradeWinRate():
     nine_wins = 0
     nine_played = 0
     ten_wins = 0
@@ -89,6 +93,10 @@ def gradeWinRate():
     eleven_winrate = (eleven_wins/eleven_played) * 100
     twelve_winrate = (twelve_wins/twelve_played) * 100
 
+    return nine_winrate, ten_winrate, eleven_winrate, twelve_winrate
+
+def gradeWinRate():
+    nine_winrate, ten_winrate, eleven_winrate, twelve_winrate = getGradeWinRate()
     print(f"Nine winrate: {round(nine_winrate, 2)}%")
     print(f"Ten winrate: {round(ten_winrate, 2)}%")
     print(f"Eleven winrate: {round(eleven_winrate, 2)}%")
