@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "sam",
+        "ta": "12",
+        "grade": "12"
+    },
+    "stats": {
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "draws": 0
+    },
+    "last_played": "14/12/2022",
+    "games_played": []
+}

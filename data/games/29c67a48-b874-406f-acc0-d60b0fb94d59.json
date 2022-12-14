@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "29c67a48-b874-406f-acc0-d60b0fb94d59",
+        "date": "14/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "b0d70240-b58c-45bc-bc03-17ca756cab65"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "ryan",
+            "ta": "47",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "jhoanne",
+            "ta": "16",
+            "grade": "11"
+        }
+    },
+    "first_mover": "ryan",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "ryan",
+            "ta": "47",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "jhoanne",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

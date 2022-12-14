@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "alizza",
+        "ta": "16",
+        "grade": "11"
+    },
+    "stats": {
+        "played": 2,
+        "won": 1,
+        "lost": 1,
+        "draws": 0
+    },
+    "last_played": "14/12/2022",
+    "games_played": [
+        "d0d64fa9-5b41-4b9c-adbb-23e5e451ea93",
+        "3b8f1715-e206-4999-ac4a-bc6580963e93"
+    ]
+}

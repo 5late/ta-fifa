@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "3b8f1715-e206-4999-ac4a-bc6580963e93",
+        "date": "14/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "d0d64fa9-5b41-4b9c-adbb-23e5e451ea93"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "vartan",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "alizza",
+            "ta": "16",
+            "grade": "11"
+        }
+    },
+    "first_mover": "alizza",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "alizza",
+            "ta": "16",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "vartan",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

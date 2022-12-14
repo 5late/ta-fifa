@@ -1,20 +1,18 @@
 {
     "meta": {
         "version": "1.0.1",
-        "name": "sam",
-        "ta": "16",
-        "grade": "12"
+        "name": "jillian",
+        "ta": "47",
+        "grade": "9"
     },
     "stats": {
-        "played": 4,
-        "won": 3,
-        "lost": 1,
+        "played": 2,
+        "won": 0,
+        "lost": 2,
         "draws": 0
     },
     "last_played": "14/12/2022",
     "games_played": [
-        "c99a55bb-762a-4bc8-8ef3-214a251df238",
-        "58207806-bd31-49f6-b989-9bc6662b8310",
         "358a459d-35bb-419c-94e9-58955493f212",
         "619ec0b4-7aba-4521-b676-a631ecd3536c"
     ]
