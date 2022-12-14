@@ -51,7 +51,7 @@ def getPlayerInfo(name):
 
 def getChangelog(changelog, version):
     changes = []
-    f = open(f'{changelog}-changelog.txt')
+    f = open(f'changelogs/{changelog}-changelog.txt')
     lines = f.readlines()
 
     for i in range(len(lines)):
