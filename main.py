@@ -191,14 +191,8 @@ def createNewGame(player_one_name, player_one_ta, player_one_grade, player_two_n
 
 
 def newGame():
-    player_one = input('Player One: ').lower()
-    player_two = input('Player Two: ').lower()
-
-    player_one_ta = input('Player Ones TA #: ')
-    player_two_ta = input('Player Twos TA #: ')
-
-    player_one_grade = input('Player Ones Grade: ')
-    player_two_grade = input('Player Twos Grade: ')
+    player_one, player_one_ta, player_one_grade = cmds.getName('Player 1: ').split('-')
+    player_two, player_two_ta, player_two_grade = cmds.getName('Player 2: ').split('-')
 
     if not os.path.exists(f'data/players/{player_one}-{player_one_ta}.json'):
         player_one_file = createPlayerFile(player_one, player_one_ta, player_one_grade)
@@ -210,13 +204,15 @@ def newGame():
     outcome = input('Was the outcome a draw or win?: ').lower()
     if outcome != 'draw':
         winner = input('Who won?: ').lower()
-        loser = input('Who lost?: ').lower()
+        if winner == player_one:
+            winner_ta, winner_grade = player_one_ta, player_one_grade
+            loser, loser_ta, loser_grade = player_two, player_two_ta, player_two_grade
+        elif winner == player_two:
+            winner_ta, winner_grade = player_two_ta, player_two_grade
+            loser, loser_ta, loser_grade = player_one, player_one_ta, player_one_grade
     else:
-        winner = 'None'
-        loser = 'None'
-
-    winner_ta, winner_grade = getPlayerInfo(winner)
-    loser_ta, loser_grade = getPlayerInfo(loser)
+        winner, winner_ta, winner_grade = 'None', 'None', 'None'
+        loser, loser_ta, loser_grade = 'None', 'None', 'None'
 
     path, id = createNewGame(player_one, player_one_ta, player_one_grade, player_two, player_two_ta, player_two_grade, first_mover, first_move, outcome, winner, winner_ta, winner_grade, loser, loser_ta, loser_grade)
 

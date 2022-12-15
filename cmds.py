@@ -1,7 +1,7 @@
 import os
 import json
 
-def getName():
+def getName(msg='Enter Name: '):
     with open('data/players.txt', 'r') as f:
         lines = f.readlines()
 
@@ -9,7 +9,7 @@ def getName():
 
         new_lines = []
 
-        name = input('Enter Name: ').lower()
+        name = input(msg).lower()
 
         for line in lines:
             if line.split('-')[0] == name:
@@ -25,7 +25,10 @@ def getName():
                     possible.clear()
                     possible.append(possibility)
         
-        return possible[0]
+        if len(possible) > 0:
+            return possible[0]
+        else:
+            return
 
 def editProfileGrade(name):
     games = []

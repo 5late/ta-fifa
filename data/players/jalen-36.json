@@ -1,20 +1,20 @@
 {
     "meta": {
         "version": "1.0.1",
-        "name": "kelly",
-        "ta": "47",
+        "name": "jalen",
+        "ta": "36",
         "grade": "11"
     },
     "stats": {
         "played": 4,
-        "won": 1,
-        "lost": 3,
+        "won": 3,
+        "lost": 1,
         "draws": 0
     },
     "last_played": "14/12/2022",
     "games_played": [
-        "e0c7dfcd-e9c8-4980-be7c-2e167c075f25",
-        "1f644d58-d652-40cf-b21b-237a199df2a9",
+        "da8b09c0-68cb-4291-864d-b951e27ff92a",
+        "93cfe45e-d6a1-43bb-91c4-69823d43fef1",
         "a3473228-7dc4-4996-9449-25478456e99c",
         "183c50bf-6cbe-4aa2-a323-412f62c5ad79"
     ]
