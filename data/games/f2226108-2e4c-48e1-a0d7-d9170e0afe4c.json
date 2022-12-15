@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "f2226108-2e4c-48e1-a0d7-d9170e0afe4c",
+        "date": "15/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "2cf630d8-a4ae-4ee8-99a0-6e28d2540da1"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "wilo",
+            "ta": "36",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "marcus",
+            "ta": "47",
+            "grade": "10"
+        }
+    },
+    "first_mover": "wilo",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "wilo",
+            "ta": "36",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "marcus",
+            "ta": "47",
+            "grade": "10"
+        }
+    }
+}

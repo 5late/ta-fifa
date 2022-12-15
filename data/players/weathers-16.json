@@ -1,20 +1,18 @@
 {
     "meta": {
         "version": "1.0.1",
-        "name": "jervin",
-        "ta": "47",
-        "grade": "11"
+        "name": "weathers",
+        "ta": "16",
+        "grade": "13"
     },
     "stats": {
-        "played": 4,
-        "won": 4,
-        "lost": 0,
+        "played": 2,
+        "won": 0,
+        "lost": 2,
         "draws": 0
     },
     "last_played": "15/12/2022",
     "games_played": [
-        "57f779b3-8125-4181-9584-c2445f97c765",
-        "6b279b19-a367-4355-850d-3bdbd27d5745",
         "ef3c7e3c-447b-44c9-89b2-e8a37ce447ea",
         "51a94838-b091-4b7b-89fd-7d1ec3991175"
     ]

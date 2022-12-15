@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "wilo",
+        "ta": "36",
+        "grade": "11"
+    },
+    "stats": {
+        "played": 2,
+        "won": 2,
+        "lost": 0,
+        "draws": 0
+    },
+    "last_played": "15/12/2022",
+    "games_played": [
+        "f2226108-2e4c-48e1-a0d7-d9170e0afe4c",
+        "2cf630d8-a4ae-4ee8-99a0-6e28d2540da1"
+    ]
+}
