@@ -12,6 +12,7 @@ def main():
     print('3 - TA Winrate')
     print('4 - Grade Winrate')
     print('5 - Personal Winrate')
+    print('6 - Check If Match Has Happened')
 
     choice = input('Enter choice: ')
 
@@ -26,6 +27,8 @@ def main():
         smart.gradeWinRate()
     elif choice == '5':
         smart.personalWinRate()
+    elif choice == '6':
+        cmds.checkMatchup()
 
 def getPlayerInfo(name):
     with open('data/players.txt', 'r') as file:
