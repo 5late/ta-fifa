@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "00e728d9-c222-416a-a1ff-f36c85e3960f",
+        "date": "14/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "7227a3e5-b8b6-4ffc-8faf-e85b4e39c7f3"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "chris",
+            "ta": "47",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "caio",
+            "ta": "16",
+            "grade": "9"
+        }
+    },
+    "first_mover": "chris",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "chris",
+            "ta": "47",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "caio",
+            "ta": "16",
+            "grade": "9"
+        }
+    }
+}
