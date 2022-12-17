@@ -73,29 +73,26 @@ def opponentWinRate():
 
     return opp_winrate
 
-def calculateWinrateWeights(winrate, opp_winrate, first):
-    if int(winrate) - int(opp_winrate) > 15 and first:
-        winrate_weight = 0.5
-        opp_winrate_weight = 0.05
-    elif int(winrate) - int(opp_winrate) > 15 and not first:
-        winrate_weight = 0.65
-        opp_winrate_weight = 0.05
-    elif int(opp_winrate) - int(winrate) > 15 and first:
-        winrate_weight = 0.35
-        opp_winrate_weight = 0.2
-    elif int(opp_winrate) - int(winrate) > 15 and not first:
-        winrate_weight = 0.425
-        opp_winrate_weight = 0.275
-    else:
-        if first:
-            winrate_weight = 0.375
-            opp_winrate_weight = 0.175
-        else:
-            winrate_weight = 0.45
-            opp_winrate_weight = 0.25
+def calculateWinrateWeightSecond(winrate, opp_winrate):
+    if winrate - opp_winrate >= 0:
+        winrate_weight = ((0.65 * ((winrate - opp_winrate)**2))/100)+35
+        opp_winrate_weight = 65 - winrate_weight
+    elif winrate - opp_winrate < 0:
+        winrate_weight = -(((0.65 * ((opp_winrate - winrate) ** 2))/100)+35) + 70
+        opp_winrate_weight = 65 + ((0.65 * ((opp_winrate - winrate)**2))/100) + 35 - 70
     
-    return winrate_weight, opp_winrate_weight
+    return winrate_weight/100, opp_winrate_weight/100
 
+def calculateWinrateWeightFirst(winrate, opp_winrate):
+    if winrate - opp_winrate >= 0:
+        winrate_weight = ((0.55 * ((winrate - opp_winrate)**2))/100)+32.5
+        opp_winrate_weight = 55 - winrate_weight
+    elif winrate - opp_winrate < 0:
+        winrate_weight = -(((0.55 * (-(winrate - opp_winrate) ** 2))/100)+32.5) + 65
+        opp_winrate_weight = 55 + ((0.55 * (-(winrate - opp_winrate)**2))/100) - 65
+    
+    return winrate_weight/100, opp_winrate_weight/100
+    
 def calculateOdds():
     name, ta, grade, winrate = calculateWinrate()
     opp_winrate = opponentWinRate()
@@ -109,14 +106,14 @@ def calculateOdds():
     first_move = input('What was the first move?: ').lower()
 
     if first_mover == name:
-        winrate_weight, opp_winrate_weight = calculateWinrateWeights(winrate, opp_winrate, True)
+        winrate_weight, opp_winrate_weight = calculateWinrateWeightFirst(winrate, opp_winrate)
         first_move_winrate = calculateFirstMoveWinRate(name, ta, first_move)
 
         odds = (winrate * winrate_weight) - (opp_winrate * opp_winrate_weight) + (first_mover_winrate * first_mover_winrate_weight) + (first_move_winrate * first_move_winrate_weight)
     else:
-        winrate_weight, opp_winrate_weight = calculateWinrateWeights(winrate, opp_winrate, False)
-        second_mover_winrate_weight = 0.3
+        winrate_weight, opp_winrate_weight = calculateWinrateWeightSecond(winrate, opp_winrate)
+        second_mover_winrate_weight = 0.35
         odds = (winrate * winrate_weight) - (opp_winrate * opp_winrate_weight) + (second_mover_winrate * second_mover_winrate_weight)
 
-    print(winrate, opp_winrate, second_mover_winrate)
+    print(winrate_weight, opp_winrate_weight, second_mover_winrate)
     print(f'{name} has {round(odds, 2)}% of winning.')
