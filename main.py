@@ -4,6 +4,7 @@ import uuid
 from datetime import datetime
 import cmds
 import smart
+import predict
 
 def main():
     print('What is happening')
@@ -13,6 +14,7 @@ def main():
     print('4 - Grade Winrate')
     print('5 - Personal Winrate')
     print('6 - Check If Match Has Happened')
+    print('7 - Calculate odds of winner')
 
     choice = input('Enter choice: ')
 
@@ -29,6 +31,8 @@ def main():
         smart.personalWinRate()
     elif choice == '6':
         cmds.checkMatchup()
+    elif choice == '7':
+        predict.calculateOdds()
 
 def getPlayerInfo(name):
     with open('data/players.txt', 'r') as file:
