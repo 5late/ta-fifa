@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "3fdee0cc-bc3f-4938-8564-8eb4fb60f5cd",
+        "date": "18/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "61006c4b-796f-4309-926a-067f0b213aa4"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "tristan",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "jouie",
+            "ta": "36",
+            "grade": "11"
+        }
+    },
+    "first_mover": "jouie",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jouie",
+            "ta": "36",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "tristan",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

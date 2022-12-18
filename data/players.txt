@@ -30,6 +30,7 @@ chelsea-16-10
 dylan-36-10
 bregar-47-13
 sanderson-47-13
+brulet-16-13
 tyler-16-10
 nilayah-16-12
 weathers-16-13
@@ -37,7 +38,7 @@ kelly-47-11
 kip-36-11
 sam-16-12
 christian-47-10
-mikai-16-11
+makai-16-11
 flordyne-47-12
 vartan-16-11
 alizza-16-11
@@ -45,5 +46,6 @@ jillian-47-9
 caio-16-9
 jalen-36-11
 wilo-36-11
+erika-47-10
 magnus-16-12
 hikaru-16-12

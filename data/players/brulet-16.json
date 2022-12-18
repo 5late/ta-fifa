@@ -1,20 +1,20 @@
 {
     "meta": {
         "version": "1.0.1",
-        "name": "wilo",
-        "ta": "36",
-        "grade": "11"
+        "name": "brulet",
+        "ta": "16",
+        "grade": "13"
     },
     "stats": {
         "played": 4,
-        "won": 4,
-        "lost": 0,
+        "won": 0,
+        "lost": 4,
         "draws": 0
     },
     "last_played": "18/12/2022",
     "games_played": [
-        "f2226108-2e4c-48e1-a0d7-d9170e0afe4c",
-        "2cf630d8-a4ae-4ee8-99a0-6e28d2540da1",
+        "eb4ae7b0-3964-427f-b17f-9f752e590e42",
+        "9fefc85f-9f1d-4fb8-8a8d-0011ccd1523c",
         "de8b4a48-88f9-46f2-945a-00e353654e65",
         "97e42fe0-44a8-4cb4-9e8e-7dea1c052a1c"
     ]
