@@ -207,7 +207,8 @@ def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', o
     if odds < 0:
         odds = 0
     luck = 7
-    odds = odds + luck
+    if odds < 90:
+        odds = odds + luck
     if not ran_before:
         calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move)
     print(f'{name} has {round(odds, 2)}% of winning.')
