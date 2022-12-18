@@ -39,6 +39,11 @@ def calculateFirstMoverWinRate(name, ta):
                     if game_data['outcome']['winner']['name'] == name:
                         games_moved_second_won += 1
 
+        if games_moved_first == 0:
+            games_moved_first = 1
+        if games_moved_second == 0:
+            games_moved_second = 1
+
         first_move_winrate = (games_moved_first_won / games_moved_first) * 100
         second_move_winrate = (games_moved_second_won / games_moved_second) * 100
 
@@ -63,6 +68,8 @@ def calculateFirstMoveWinRate(name, ta, move):
                         if game_data['outcome']['winner']['name'] == name:
                             games_moved_won += 1
 
+    if games_moved == 0:
+        games_moved = 1
     first_move_winrate = (games_moved_won / games_moved) * 100
 
     return first_move_winrate
