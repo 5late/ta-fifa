@@ -5,8 +5,9 @@ import smart
 
 
 # Personal winrate
-def calculateWinrate():
-    name, ta, grade = cmds.getName().split('-')
+def calculateWinrate(name='', ta='', grade=''):
+    if len(name) == 0:
+        name, ta, grade = cmds.getName().split('-')
 
     winrate = smart.getPersonalWinRate(name, ta, grade)
 
@@ -66,12 +67,13 @@ def calculateFirstMoveWinRate(name, ta, move):
 
     return first_move_winrate
 
-def opponentWinRate():
-    opp_name, opp_ta, opp_grade = cmds.getName('Enter Opponent Name: ').split('-')
+def opponentWinRate(opp_name='', opp_ta='', opp_grade=''):
+    if len(opp_name) == 0:
+        opp_name, opp_ta, opp_grade = cmds.getName('Enter Opponent Name: ').split('-')
 
     opp_winrate = smart.getPersonalWinRate(opp_name, opp_ta, opp_grade)
 
-    return opp_name, opp_ta, opp_winrate
+    return opp_name, opp_ta, opp_grade, opp_winrate
 
 def checkForPrevGame(name, ta, opp_name, opp_ta):
     with open(f'data/players/{name}-{ta}.json', 'r') as file:
@@ -147,9 +149,15 @@ def calculateWinrateWeightFirst(winrate, opp_winrate):
     
     return winrate_weight/100, opp_winrate_weight/100
     
-def calculateOdds():
-    name, ta, grade, winrate = calculateWinrate()
-    opp_name, opp_ta, opp_winrate = opponentWinRate()
+def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', opp_grade='', opp_winrate=0, first_mover='', first_move=''):
+    ran_before = False
+    if len(name) == 0:
+        name, ta, grade, winrate = calculateWinrate()
+        opp_name, opp_ta, opp_grade, opp_winrate = opponentWinRate()
+        first_mover = input('Who is moving first?: ').lower()
+        first_move = input('What was the first move?: ').lower()
+    else:
+        ran_before = True
     first_mover_winrate, second_mover_winrate = calculateFirstMoverWinRate(name, ta)
 
     played_before = checkForPrevGame(name, ta, opp_name, opp_ta)
@@ -163,9 +171,6 @@ def calculateOdds():
         second_mover_winrate_weight = 0.1
         first_move_winrate_weight = 0.1
         prev_game = getPrevGameWeight(name, played_before)
-
-    first_mover = input('Who is moving first?: ').lower()
-    first_move = input('What was the first move?: ').lower()
 
     if first_mover == name:
         winrate_weight, opp_winrate_weight = calculateWinrateWeightFirst(winrate, opp_winrate)
@@ -184,5 +189,7 @@ def calculateOdds():
         else:
             odds = (winrate * winrate_weight) - (opp_winrate * opp_winrate_weight) + (second_mover_winrate * second_mover_winrate_weight) + prev_game
 
-    print(winrate_weight, opp_winrate_weight, first_mover_winrate, prev_game)
+    #print(winrate_weight, opp_winrate_weight, first_mover_winrate, prev_game)
+    if not ran_before:
+        calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move)
     print(f'{name} has {round(odds, 2)}% of winning.')
