@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "35896e93-0f24-4131-9e91-38ef5864e5f9",
+        "date": "19/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "47d24b6b-dbee-4124-bc59-c41c7f917fd7"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "akeisha",
+            "ta": "47",
+            "grade": "9"
+        },
+        "player_two": {
+            "name": "vartan",
+            "ta": "16",
+            "grade": "11"
+        }
+    },
+    "first_mover": "akeisha",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "akeisha",
+            "ta": "47",
+            "grade": "9"
+        },
+        "loser": {
+            "name": "vartan",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}
