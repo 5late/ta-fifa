@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "db995ad3-f620-4a37-9bd3-e7ce28232eb9",
+        "date": "21/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "acb21012-8624-424d-be92-5ae50e380262"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "bregar",
+            "ta": "47",
+            "grade": "13"
+        },
+        "player_two": {
+            "name": "gigi",
+            "ta": "16",
+            "grade": "12"
+        }
+    },
+    "first_mover": "bregar",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "bregar",
+            "ta": "47",
+            "grade": "13"
+        },
+        "loser": {
+            "name": "gigi",
+            "ta": "16",
+            "grade": "12"
+        }
+    }
+}
