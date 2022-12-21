@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "c8351dd6-6494-4e34-a35a-260b146ca7e1",
+        "date": "21/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "6c0f277c-c431-4373-8232-d621fcfaff2c"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "kip",
+            "ta": "36",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "chelsea",
+            "ta": "16",
+            "grade": "10"
+        }
+    },
+    "first_mover": "chelsea",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "chelsea",
+            "ta": "16",
+            "grade": "10"
+        },
+        "loser": {
+            "name": "kip",
+            "ta": "36",
+            "grade": "11"
+        }
+    }
+}

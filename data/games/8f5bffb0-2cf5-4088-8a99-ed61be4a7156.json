@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "8f5bffb0-2cf5-4088-8a99-ed61be4a7156",
+        "date": "21/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "3d02c223-ef8b-4fb6-904b-d86817284456"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "brulet",
+            "ta": "16",
+            "grade": "13"
+        },
+        "player_two": {
+            "name": "isaiah",
+            "ta": "47",
+            "grade": "10"
+        }
+    },
+    "first_mover": "isaiah",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "isaiah",
+            "ta": "47",
+            "grade": "10"
+        },
+        "loser": {
+            "name": "brulet",
+            "ta": "16",
+            "grade": "13"
+        }
+    }
+}

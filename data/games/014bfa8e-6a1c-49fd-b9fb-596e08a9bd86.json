@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "014bfa8e-6a1c-49fd-b9fb-596e08a9bd86",
+        "date": "21/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "7218fc10-5fe6-4e6c-888d-6755a46ea664"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "vartan",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "jillian",
+            "ta": "47",
+            "grade": "9"
+        }
+    },
+    "first_mover": "jillian",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jillian",
+            "ta": "47",
+            "grade": "9"
+        },
+        "loser": {
+            "name": "vartan",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

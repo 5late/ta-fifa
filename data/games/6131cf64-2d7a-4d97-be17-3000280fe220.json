@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "6131cf64-2d7a-4d97-be17-3000280fe220",
+        "date": "21/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "a2212c98-2979-4d38-8866-b002791ee5a1"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "makai",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        }
+    },
+    "first_mover": "makai",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "makai",
+            "ta": "16",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}
