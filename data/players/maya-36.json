@@ -1,0 +1,23 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "maya",
+        "ta": "36",
+        "grade": "11"
+    },
+    "stats": {
+        "played": 6,
+        "won": 4,
+        "lost": 2,
+        "draws": 0
+    },
+    "last_played": "23/12/2022",
+    "games_played": [
+        "3a0563cb-60ab-4c08-ab5a-c7740b5ff07a",
+        "d17a3d73-5e14-40ad-b903-f4e551a3a39a",
+        "bfc12d88-0d67-4561-8bbb-f0b6f077815b",
+        "5a853630-b3cc-472a-9d80-daf47b24faca",
+        "41dbd3bc-bfe0-4293-87e5-d97163b243e6",
+        "0b4ebbb5-35d9-40d7-a9d7-99cb0c02b494"
+    ]
+}
