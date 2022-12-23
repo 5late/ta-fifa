@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "8a031b5e-1573-4dda-80d3-3040a6e33840",
+        "date": "23/12/2022",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "e924f72e-7d95-4dd4-8dcf-960acaadb202"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "nicholas",
+            "ta": "47",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "weathers",
+            "ta": "16",
+            "grade": "13"
+        }
+    },
+    "first_mover": "nicholas",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "nicholas",
+            "ta": "47",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "weathers",
+            "ta": "16",
+            "grade": "13"
+        }
+    }
+}

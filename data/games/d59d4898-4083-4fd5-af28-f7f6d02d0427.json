@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "d59d4898-4083-4fd5-af28-f7f6d02d0427",
+        "date": "23/12/2022",
+        "game_number": 2,
+        "previous_games": [
+            "fd84d10e-b58e-4e0e-bc1c-63c7506f3a9b"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "jouie",
+            "ta": "36",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "rhemy",
+            "ta": "36",
+            "grade": "12"
+        }
+    },
+    "first_mover": "rhemy",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jouie",
+            "ta": "36",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "rhemy",
+            "ta": "36",
+            "grade": "12"
+        }
+    }
+}
