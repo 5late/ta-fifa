@@ -14,7 +14,8 @@ def main():
     print('4 - Grade Winrate')
     print('5 - Personal Winrate')
     print('6 - Check If Match Has Happened')
-    print('7 - Calculate odds of winner')
+    print('7 - Calculate odds of match winner (solo game)')
+    print('8 - Calculate odds of matchup winner (multi game)')
 
     choice = input('Enter choice: ')
 
@@ -32,7 +33,9 @@ def main():
     elif choice == '6':
         cmds.checkMatchup()
     elif choice == '7':
-        predict.calculateOdds()
+        predict.printOdds()
+    elif choice == '8':
+        predict.calculateMultipleMatches()
 
 def getPlayerInfo(name):
     with open('data/players.txt', 'r') as file:
