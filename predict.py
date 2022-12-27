@@ -170,7 +170,42 @@ def calculateWinrateWeightFirst(winrate, opp_winrate):
     
     return winrate_weight/100, opp_winrate_weight/100
     
-def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', opp_grade='', opp_winrate=0, first_mover='', first_move='', multiple_match=False):
+def calculateConsistency(name, ta):
+    with open(f'data/players/{name}-{ta}.json', 'r') as f:
+        data = json.load(f)
+
+        games_played = data['games_played']
+
+        matchups = 0
+        consistent_matchups = 0 # matchups where player won both matches
+
+        for game in games_played:
+            matchups += 1
+            won = 0
+            with open(f'data/games/{game}.json', 'r') as game_file:
+                game_data = json.load(game_file)
+
+                if game_data['outcome']['winner']['name'] == name:
+                    won += 1
+
+                following_games = game_data['meta']['following_games']
+
+                if len(following_games) > 0:
+                    for follow_game in following_games:
+                        with open(f'data/games/{follow_game}.json', 'r') as follow_game_file:
+                            follow_game_data = json.load(follow_game_file)
+
+                            if follow_game_data['outcome']['winner']['name'] == name:
+                                won += 1
+                
+            if won >= 2:
+                consistent_matchups += 1
+    
+    return round(consistent_matchups/(matchups/2), 2)
+
+                
+
+def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', opp_grade='', opp_winrate=0, first_mover='', first_move='', multiple_match=False, matches=0):
     ran_before = False
     if len(name) == 0:
         name, ta, grade, winrate = calculateWinrate()
@@ -220,8 +255,10 @@ def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', o
     if not ran_before and not multiple_match:
         calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move)
     if multiple_match:
+        consistency = calculateConsistency(name, ta)
+        print(name, consistency)
+        odds = (1.00 - (matches * 0.015)) * odds + (matches * 0.015) * consistency
         return name, odds
-    print(f'{name} has {round(odds, 2)}% of winning.')
     print(f'{name} has {round(odds, 2)}% of winning.')
 
 
@@ -238,21 +275,21 @@ def calculateMultipleMatches():
     for i in range(matches):
         if i % 2 == 0:
             first_mover = name
-            func_name, odds = calculateOdds(name, ta, grade, winrate, opp_name, opp_ta, opp_grade, opp_winrate, first_mover, first_move, True)
+            func_name, odds = calculateOdds(name, ta, grade, winrate, opp_name, opp_ta, opp_grade, opp_winrate, first_mover, first_move, True, matches)
             total += odds
         else:
             first_mover = opp_name
-            func_name, odds = calculateOdds(name, ta, grade, winrate, opp_name, opp_ta, opp_grade, opp_winrate, first_mover, first_move, True)
+            func_name, odds = calculateOdds(name, ta, grade, winrate, opp_name, opp_ta, opp_grade, opp_winrate, first_mover, first_move, True, matches)
             total += odds
         
     for i in range(matches):
         if i % 2 == 0:
             first_mover = name
-            func_name, odds = calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move, True)
+            func_name, odds = calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move, True, matches)
             total_opp += odds
         else:
             first_mover = opp_name
-            func_name, odds = calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move, True)
+            func_name, odds = calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move, True, matches)
             total_opp += odds
     
     total_odds = round(total / matches, 2)
