@@ -201,7 +201,7 @@ def calculateConsistency(name, ta):
             if won >= 2:
                 consistent_matchups += 1
     
-    return round(consistent_matchups/(matchups/2), 2)
+    return round((consistent_matchups/(matchups/2)) * 100, 2)
 
                 
 
@@ -257,7 +257,7 @@ def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', o
     if multiple_match:
         consistency = calculateConsistency(name, ta)
         print(name, consistency)
-        odds = (1.00 - (matches * 0.015)) * odds + (matches * 0.015) * consistency
+        odds = (1.00 - (matches * 0.0125)) * odds + (matches * 0.0125) * consistency
         return name, odds
     print(f'{name} has {round(odds, 2)}% of winning.')
 
