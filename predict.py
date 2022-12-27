@@ -256,7 +256,6 @@ def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', o
         calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move)
     if multiple_match:
         consistency = calculateConsistency(name, ta)
-        print(name, consistency)
         odds = (1.00 - (matches * 0.0125)) * odds + (matches * 0.0125) * consistency
         return name, odds
     print(f'{name} has {round(odds, 2)}% of winning.')
@@ -292,7 +291,14 @@ def calculateMultipleMatches():
             func_name, odds = calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move, True, matches)
             total_opp += odds
     
-    total_odds = round(total / matches, 2)
+    total_odds = round(total / matches, 2) # these are fractional odds
     total_opp_odds = round(total_opp / matches, 2)
-    print(f'{name} has {total_odds}% of winning.')
-    print(f'{opp_name} has {total_opp_odds}% of winning.')
+
+    decimal_odds = round(total_opp_odds/total_odds, 2) + 1 # these are decimal odds
+    decimal_opp_odds = round(total_odds/total_opp_odds, 2) + 1
+
+    implied_odds = round(1/decimal_odds, 2) * 100
+    implied_opp_odds = round(1/decimal_opp_odds, 2) * 100
+
+    print(f'{name} has {implied_odds}% of winning.')
+    print(f'{opp_name} has {implied_opp_odds}% of winning.')
