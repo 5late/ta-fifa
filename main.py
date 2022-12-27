@@ -33,7 +33,7 @@ def main():
     elif choice == '6':
         cmds.checkMatchup()
     elif choice == '7':
-        predict.printOdds()
+        predict.calculateOdds()
     elif choice == '8':
         predict.calculateMultipleMatches()
 

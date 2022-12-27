@@ -217,13 +217,10 @@ def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', o
     luck = 7
     if odds < 90:
         odds = odds + luck
-    if not ran_before:
-        name, odds = calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move)
-    else:
+    if not ran_before and not multiple_match:
+        calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move)
+    if multiple_match:
         return name, odds
-
-def printOdds():
-    name, odds = calculateOdds()
     print(f'{name} has {round(odds, 2)}% of winning.')
     print(f'{name} has {round(odds, 2)}% of winning.')
 
@@ -236,16 +233,29 @@ def calculateMultipleMatches():
     matches = int(input('How many matches are going to be played?: '))
 
     total = 0
+    total_opp = 0
 
     for i in range(matches):
         if i % 2 == 0:
             first_mover = name
-            name, odds = calculateOdds(name, ta, grade, winrate, opp_name, opp_ta, opp_grade, opp_winrate, first_mover, first_move, True)
+            func_name, odds = calculateOdds(name, ta, grade, winrate, opp_name, opp_ta, opp_grade, opp_winrate, first_mover, first_move, True)
             total += odds
         else:
             first_mover = opp_name
-            name, odds = calculateOdds(name, ta, grade, winrate, opp_name, opp_ta, opp_grade, opp_winrate, first_mover, first_move, True)
+            func_name, odds = calculateOdds(name, ta, grade, winrate, opp_name, opp_ta, opp_grade, opp_winrate, first_mover, first_move, True)
             total += odds
+        
+    for i in range(matches):
+        if i % 2 == 0:
+            first_mover = name
+            func_name, odds = calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move, True)
+            total_opp += odds
+        else:
+            first_mover = opp_name
+            func_name, odds = calculateOdds(opp_name, opp_ta, opp_grade, opp_winrate, name, ta, grade, winrate, first_mover, first_move, True)
+            total_opp += odds
     
     total_odds = round(total / matches, 2)
+    total_opp_odds = round(total_opp / matches, 2)
     print(f'{name} has {total_odds}% of winning.')
+    print(f'{opp_name} has {total_opp_odds}% of winning.')
