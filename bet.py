@@ -1,3 +1,4 @@
+# TODO: CONSOLIDATE BETS WITH FUNCTION TO ACTUALLY PAYOUT A BET
 import json
 import cmds
 import predict
