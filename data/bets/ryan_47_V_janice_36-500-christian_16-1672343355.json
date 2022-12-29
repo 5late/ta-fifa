@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "id": "ryan_47_V_janice_36-500-christian_16-1672343355",
+        "date": "29/12/2022",
+        "ticks": 1672343355,
+        "status": "OUTSTANDING"
+    },
+    "bet_info": {
+        "better_name": "christian",
+        "better_ta": "16",
+        "better_grade": "12",
+        "bet_amount": 500
+    },
+    "players": {
+        "player_one": {
+            "name": "ryan",
+            "ta": "47",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "janice",
+            "ta": "36",
+            "grade": "11"
+        }
+    }
+}
