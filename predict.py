@@ -261,9 +261,10 @@ def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', o
     print(f'{name} has {round(odds, 2)}% of winning.')
 
 
-def calculateMultipleMatches(first_move, matches):
-    name, ta, grade, winrate = calculateWinrate()
-    opp_name, opp_ta, opp_grade, opp_winrate = opponentWinRate()
+def calculateMultipleMatches(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', opp_grade='', opp_winrate=0, first_move='', matches=''):
+    if len(name) == 0:
+        name, ta, grade, winrate = calculateWinrate()
+        opp_name, opp_ta, opp_grade, opp_winrate = opponentWinRate()
 
     total = 0
     total_opp = 0
@@ -303,6 +304,6 @@ def printMultipleMatches():
     first_move = input('What should the first move be?: ').lower()
     matches = int(input('How many matches are going to be played?: '))
 
-    name, opp_name, decimal_odds, decimal_opp_odds, implied_odds, implied_opp_odds = calculateMultipleMatches(first_move, matches)
+    name, opp_name, decimal_odds, decimal_opp_odds, implied_odds, implied_opp_odds = calculateMultipleMatches(first_move=first_move, matches=matches)
     print(f'{name} has {implied_odds}% of winning.')
     print(f'{opp_name} has {implied_opp_odds}% of winning.')

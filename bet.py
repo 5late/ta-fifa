@@ -92,12 +92,22 @@ def createBet(name='', ta=''):
         print('You do not have that much money.')
         bet_amount = int(input('Enter the bet amount: '))
 
+    bet_on = input('Who would you like to bet on?: ')
+    while bet_on != player_one and bet_on != player_two:
+        print('You have to bet on one of the players you entered.')
+        bet_on = input('Who would you like to bet on?: ')
+
     ticks = int(time.time())
     id = generateBetId(name, ta, player_one, player_one_ta, player_two, player_two_ta, str(bet_amount), str(ticks))
 
     date = datetime.now().strftime("%d/%m/%Y")
 
-    fractional_odds = predict.calculateOdds(player_one, player_one_ta, player_one_grade, player_one_winrate, player_two, player_two_ta, player_two_grade, player_two_winrate, player_one, 'd', True, 2)
+    name, opp_name, decimal_odds, decimal_opp_odds, implied_odds, implied_opp_odds = predict.calculateMultipleMatches(player_one, player_one_ta, player_one_grade, player_one_winrate, player_two, player_two_ta, player_two_grade, player_two_winrate, 'd', 2)
+
+    if bet_on == name:
+        odds = decimal_odds
+    elif bet_on == opp_name:
+        odds = decimal_opp_odds
 
     data = {
         "meta":{
@@ -110,7 +120,9 @@ def createBet(name='', ta=''):
             "better_name": name, 
             "better_ta": ta,
             "better_grade": grade,
-            "bet_amount": bet_amount
+            "bet_on":bet_on,
+            "bet_amount": bet_amount,
+            "bet_odds": odds
         },
         "players":{
             "player_one":{
