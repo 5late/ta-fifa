@@ -37,7 +37,7 @@ def main():
     elif choice == '7':
         predict.calculateOdds()
     elif choice == '8':
-        predict.calculateMultipleMatches()
+        predict.printMultipleMatches()
     elif choice == '9':
         bet.mainMenu()
 

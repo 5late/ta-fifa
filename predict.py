@@ -5,9 +5,9 @@ import smart
 
 
 # Personal winrate
-def calculateWinrate(name='', ta='', grade=''):
+def calculateWinrate(name='', ta='', grade='', msg='Enter Name: '):
     if len(name) == 0:
-        name, ta, grade = cmds.getName().split('-')
+        name, ta, grade = cmds.getName(msg).split('-')
 
     winrate = smart.getPersonalWinRate(name, ta, grade)
 
@@ -261,12 +261,9 @@ def calculateOdds(name='', ta='', grade='', winrate=0, opp_name='', opp_ta='', o
     print(f'{name} has {round(odds, 2)}% of winning.')
 
 
-def calculateMultipleMatches():
+def calculateMultipleMatches(first_move, matches):
     name, ta, grade, winrate = calculateWinrate()
     opp_name, opp_ta, opp_grade, opp_winrate = opponentWinRate()
-
-    first_move = input('What should the first move be?: ').lower()
-    matches = int(input('How many matches are going to be played?: '))
 
     total = 0
     total_opp = 0
@@ -300,5 +297,12 @@ def calculateMultipleMatches():
     implied_odds = round(1/decimal_odds, 2) * 100
     implied_opp_odds = round(1/decimal_opp_odds, 2) * 100
 
+    return name, opp_name, decimal_odds, decimal_opp_odds, implied_odds, implied_opp_odds
+
+def printMultipleMatches():
+    first_move = input('What should the first move be?: ').lower()
+    matches = int(input('How many matches are going to be played?: '))
+
+    name, opp_name, decimal_odds, decimal_opp_odds, implied_odds, implied_opp_odds = calculateMultipleMatches(first_move, matches)
     print(f'{name} has {implied_odds}% of winning.')
     print(f'{opp_name} has {implied_opp_odds}% of winning.')

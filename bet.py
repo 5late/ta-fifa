@@ -1,5 +1,6 @@
 import json
 import cmds
+import predict
 from datetime import datetime
 import time
 
@@ -78,8 +79,8 @@ def createBet(name='', ta=''):
     if len(name) == 0:
         name, ta, grade = cmds.getName('Enter Name [Ryan/Christian]: ').split('-')
 
-    player_one, player_one_ta, player_one_grade = cmds.getName('Enter Player 1: ').split('-')
-    player_two, player_two_ta, player_two_grade = cmds.getName('Enter Player 2: ').split('-')
+    player_one, player_one_ta, player_one_grade, player_one_winrate = predict.calculateWinrate(msg='Enter Player 1: ').split('-')
+    player_two, player_two_ta, player_two_grade, player_two_winrate = predict.calculateWinrate(msg='Enter Player 2: ').split('-')
 
     bet_amount = int(input('Enter the bet amount: '))
 
@@ -95,6 +96,8 @@ def createBet(name='', ta=''):
     id = generateBetId(name, ta, player_one, player_one_ta, player_two, player_two_ta, str(bet_amount), str(ticks))
 
     date = datetime.now().strftime("%d/%m/%Y")
+
+    fractional_odds = predict.calculateOdds(player_one, player_one_ta, player_one_grade, player_one_winrate, player_two, player_two_ta, player_two_grade, player_two_winrate, player_one, 'd', True, 2)
 
     data = {
         "meta":{
@@ -133,9 +136,8 @@ def createBet(name='', ta=''):
         bet_data = json.load(bet_file)
 
         bets = bet_data['bets']['outstanding_bets']
-        balance = bet_data['bets']['balance']
 
-        balance = balance - bet_amount_post_tax
+        bet_data['bets']['balance'] = bet_data['bets']['balance'] - bet_amount_post_tax
         bets.append(id)
 
     bet_outfile = json.dumps(bet_data, indent=4)
