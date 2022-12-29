@@ -80,10 +80,10 @@ def bigBrothersWallet(name, ta, transaction_type, amount):
 
         if transaction_type == 'in':
             data['balance'] += amount
-            data['transcations'].append(f'IN-{amount}-{name}-{ta}')
+            data['transactions'].append(f'IN-{amount}-{name}-{ta}')
         elif transaction_type == 'out':
             data['balance'] -= amount
-            data['transcations'].append(f'OUT-{amount}-{name}-{ta}')
+            data['transactions'].append(f'OUT-{amount}-{name}-{ta}')
         
         data['last_interaction'] = f'{name}-{ta}'
 

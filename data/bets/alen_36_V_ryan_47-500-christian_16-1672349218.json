@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "id": "alen_36_V_ryan_47-500-christian_16-1672349218",
+        "date": "29/12/2022",
+        "ticks": 1672349218,
+        "status": "CLOSED"
+    },
+    "bet_info": {
+        "better_name": "christian",
+        "better_ta": "16",
+        "better_grade": "12",
+        "bet_on": "alen",
+        "bet_amount": 500,
+        "bet_odds": 1.69
+    },
+    "players": {
+        "player_one": {
+            "name": "alen",
+            "ta": "36",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "ryan",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}
