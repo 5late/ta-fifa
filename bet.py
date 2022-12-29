@@ -72,19 +72,38 @@ def convertFees(bet_amount_pre_tax):
 
     total_fees = taxes + casino_fees
 
-    return bet_amount_pre_tax + total_fees
-    
+    return bet_amount_pre_tax + total_fees, total_fees
+
+def bigBrothersWallet(name, ta, transaction_type, amount):
+    with open('data/players/01-BIGBROTHER.json', 'r') as file:
+        data = json.load(file)
+
+        if transaction_type == 'in':
+            data['balance'] += amount
+            data['transcations'].append(f'IN-{amount}-{name}-{ta}')
+        elif transaction_type == 'out':
+            data['balance'] -= amount
+            data['transcations'].append(f'OUT-{amount}-{name}-{ta}')
+        
+        data['last_interaction'] = f'{name}-{ta}'
+
+    outfile = json.dumps(data, indent=4)
+
+    with open(f'data/players/01-BIGBROTHER.json', 'w') as f:
+        f.write(outfile)
 
 def createBet(name='', ta=''):
     if len(name) == 0:
         name, ta, grade = cmds.getName('Enter Name [Ryan/Christian]: ').split('-')
 
-    player_one, player_one_ta, player_one_grade, player_one_winrate = predict.calculateWinrate(msg='Enter Player 1: ').split('-')
-    player_two, player_two_ta, player_two_grade, player_two_winrate = predict.calculateWinrate(msg='Enter Player 2: ').split('-')
+    player_one, player_one_ta, player_one_grade, player_one_winrate = predict.calculateWinrate(msg='Enter Player 1: ')
+    player_two, player_two_ta, player_two_grade, player_two_winrate = predict.calculateWinrate(msg='Enter Player 2: ')
 
     bet_amount = int(input('Enter the bet amount: '))
 
-    bet_amount_post_tax = convertFees(bet_amount)
+    bet_amount_post_tax, fees = convertFees(bet_amount)
+
+    bigBrothersWallet(name, ta, 'in', bet_amount_post_tax) # take the money with taxes and fees
 
     balance = checkBalance()
 
@@ -102,9 +121,9 @@ def createBet(name='', ta=''):
 
     date = datetime.now().strftime("%d/%m/%Y")
 
-    name, opp_name, decimal_odds, decimal_opp_odds, implied_odds, implied_opp_odds = predict.calculateMultipleMatches(player_one, player_one_ta, player_one_grade, player_one_winrate, player_two, player_two_ta, player_two_grade, player_two_winrate, 'd', 2)
+    oname, opp_name, decimal_odds, decimal_opp_odds, implied_odds, implied_opp_odds = predict.calculateMultipleMatches(player_one, player_one_ta, player_one_grade, player_one_winrate, player_two, player_two_ta, player_two_grade, player_two_winrate, 'd', 2)
 
-    if bet_on == name:
+    if bet_on == oname:
         odds = decimal_odds
     elif bet_on == opp_name:
         odds = decimal_opp_odds
@@ -163,7 +182,7 @@ def removeBet(name='', ta=''):
     if len(name) == 0:
         name, ta, grade = cmds.getName('Enter Name [Ryan/Christian]: ').split('-')
 
-    bets = checkOutstandingBets()
+    bets = checkOutstandingBets(name, ta)
 
     print('You have the following outstanding bets: ' + str(bets))
 
@@ -192,6 +211,8 @@ def removeBet(name='', ta=''):
 
                     outstanding_bets.remove(bet)
                     player_data['bets']['balance'] += round(data['bet_info']['bet_amount'] * 1.13)
+
+                    bigBrothersWallet(name, ta, 'out', data['bet_info']['bet_amount'] * 1.13) # refund taxes but not fees
 
                 bet_outfile = json.dumps(data, indent=4)
 
