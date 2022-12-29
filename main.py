@@ -5,6 +5,7 @@ from datetime import datetime
 import cmds
 import smart
 import predict
+import bet
 
 def main():
     print('What is happening')
@@ -16,6 +17,7 @@ def main():
     print('6 - Check If Match Has Happened')
     print('7 - Calculate odds of match winner (solo game)')
     print('8 - Calculate odds of matchup winner (multi game)')
+    print('9 - Bet Main Menu')
 
     choice = input('Enter choice: ')
 
@@ -36,6 +38,8 @@ def main():
         predict.calculateOdds()
     elif choice == '8':
         predict.calculateMultipleMatches()
+    elif choice == '9':
+        bet.mainMenu()
 
 def getPlayerInfo(name):
     with open('data/players.txt', 'r') as file:

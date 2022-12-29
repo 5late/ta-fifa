@@ -21,5 +21,11 @@
         "8604e6d2-99fd-4800-9dca-f3f1b87f883c",
         "3efc96e8-2d18-4538-93aa-752fc5431c85"
     ],
-    "last_played": "20/12/2022"
+    "last_played": "20/12/2022",
+    "bets": {
+        "balance": 1000,
+        "outstanding_bets":[
+
+        ]
+    }
 }
