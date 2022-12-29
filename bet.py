@@ -18,6 +18,8 @@ def mainMenu():
         printOutstandingBets()
     elif choice == '3':
         createBet()
+    elif choice == '5':
+        removeBet()
 
 
 def printBalance():
@@ -142,3 +144,49 @@ def createBet(name='', ta=''):
         f.write(bet_outfile)
     
     print(f'New Bet Created with ID: {id}')
+
+def removeBet(name='', ta=''):
+    if len(name) == 0:
+        name, ta, grade = cmds.getName('Enter Name [Ryan/Christian]: ').split('-')
+
+    bets = checkOutstandingBets()
+
+    print('You have the following outstanding bets: ' + str(bets))
+
+    print('Fill out the following details about the bet you want to cancel.')
+
+    player_one, player_one_ta, player_one_grade = cmds.getName('Enter Player 1: ').split('-')
+    player_two, player_two_ta, player_two_grade = cmds.getName('Enter Player 2: ').split('-')
+
+    bet_amount = 0
+    ticks = 0
+
+    remove_id = generateBetId(name, ta, player_one, player_one_ta, player_two, player_two_ta, str(bet_amount), str(ticks))
+
+    for bet in bets:
+        if bet.split('-')[0].split('_V_')[0].split('_')[0] == player_one and bet.split('-')[0].split('_V_')[0].split('_')[1] == player_one_ta:
+            if bet.split('-')[0].split('_V_')[1].split('_')[0] == player_two and bet.split('-')[0].split('_V_')[1].split('_')[1] == player_two_ta:
+                with open(f'data/bets/{bet}.json', 'r') as bet_file:
+                    data = json.load(bet_file)
+
+                    data['meta']['status'] = 'CLOSED'
+                
+                with open(f'data/players/{name}-{ta}.json', 'r') as player_file:
+                    player_data = json.load(player_file)
+
+                    outstanding_bets = player_data['bets']['outstanding_bets']
+
+                    outstanding_bets.remove(bet)
+                    player_data['bets']['balance'] += round(data['bet_info']['bet_amount'] * 1.13)
+
+                bet_outfile = json.dumps(data, indent=4)
+
+                with open(f'data/bets/{bet}.json', 'w') as f:
+                    f.write(bet_outfile)
+
+                player_outfile = json.dumps(player_data, indent=4)
+
+                with open(f'data/players/{name}-{ta}.json', 'w') as player_f:
+                    player_f.write(player_outfile)
+            
+                print('Removed bet: ' + str(bet))
