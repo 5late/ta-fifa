@@ -305,5 +305,5 @@ def printMultipleMatches():
     matches = int(input('How many matches are going to be played?: '))
 
     name, opp_name, decimal_odds, decimal_opp_odds, implied_odds, implied_opp_odds = calculateMultipleMatches(first_move=first_move, matches=matches)
-    print(f'{name} has {implied_odds}% of winning.')
-    print(f'{opp_name} has {implied_opp_odds}% of winning.')
+    print(f'{name} has {implied_odds}% of winning. Betting Odds: {decimal_odds}.')
+    print(f'{opp_name} has {implied_opp_odds}% of winning. Betting Odds: {decimal_opp_odds}.')
