@@ -12,6 +12,7 @@ def mainMenu():
     print('3. Create New Bet')
     print('4. Edit a Bet')
     print('5. Remove a Bet')
+    print('6. Consolidate Bets')
 
     choice = input('Enter your selection: ')
 
@@ -23,6 +24,8 @@ def mainMenu():
         createBet()
     elif choice == '5':
         removeBet()
+    elif choice == '6':
+        consolidateBets()
 
 
 def printBalance():
@@ -232,9 +235,10 @@ def consolidateBets():
     all_bets_path = 'data/bets/'
 
     for bet in os.listdir(all_bets_path):
+        bet = bet.removesuffix('.json')
         won = 0
         lost = 0
-        with open(bet, 'r') as file:
+        with open(f'data/bets/{bet}.json', 'r') as file:
             data = json.load(file)
 
             if data['meta']['status'] == 'OUTSTANDING':
@@ -249,7 +253,7 @@ def consolidateBets():
                 if not played:
                     continue
                 else:
-                    with open(f'data/games/{game}.json', 'r') as game_file:
+                    with open(f'data/games/{played}.json', 'r') as game_file:
                         game_data = json.load(game_file)
 
                         outcome = game_data['outcome']['outcome_word']
@@ -314,3 +318,5 @@ def consolidateBets():
 
                     with open(f'data/bets/{bet}.json', 'w') as bet_f:
                         bet_f.write(bet_outfile)
+        
+                print(f'Consolidated bet {bet}.')

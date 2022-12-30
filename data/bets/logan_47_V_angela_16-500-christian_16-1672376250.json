@@ -1,27 +1,27 @@
 {
     "meta": {
-        "id": "alen_36_V_ryan_47-500-christian_16-1672349218",
+        "id": "logan_47_V_angela_16-500-christian_16-1672376250",
         "date": "29/12/2022",
-        "ticks": 1672349218,
-        "status": "OUTSTANDING"
+        "ticks": 1672376250,
+        "status": "WON"
     },
     "bet_info": {
         "better_name": "christian",
         "better_ta": "16",
         "better_grade": "12",
-        "bet_on": "alen",
+        "bet_on": "angela",
         "bet_amount": 500,
-        "bet_odds": 1.69
+        "bet_odds": 1.29
     },
     "players": {
         "player_one": {
-            "name": "alen",
-            "ta": "36",
-            "grade": "11"
+            "name": "logan",
+            "ta": "47",
+            "grade": "12"
         },
         "player_two": {
-            "name": "ryan",
-            "ta": "47",
+            "name": "angela",
+            "ta": "16",
             "grade": "12"
         }
     }

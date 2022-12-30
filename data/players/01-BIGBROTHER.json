@@ -1,9 +1,12 @@
 {
     "name": "BIG BROTHER",
-    "balance": 1000005.0,
+    "balance": 999285.0,
     "last_interaction": "christian-16",
     "transactions": [
         "IN-570.0-christian-16",
-        "OUT-565.0-christian-16"
+        "OUT-565.0-christian-16",
+        "IN-570.0-christian-16",
+        "OUT-645.0-christian-16",
+        "OUT-645.0-christian-16"
     ]
 }
