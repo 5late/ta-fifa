@@ -4,6 +4,7 @@ import cmds
 import predict
 from datetime import datetime
 import time
+import os
 
 def mainMenu():
     print('1. Check Balance')
@@ -226,3 +227,90 @@ def removeBet(name='', ta=''):
                     player_f.write(player_outfile)
             
                 print('Removed bet: ' + str(bet))
+
+def consolidateBets():
+    all_bets_path = 'data/bets/'
+
+    for bet in os.listdir(all_bets_path):
+        won = 0
+        lost = 0
+        with open(bet, 'r') as file:
+            data = json.load(file)
+
+            if data['meta']['status'] == 'OUTSTANDING':
+                player_one = data['players']['player_one']['name']
+                player_two = data['players']['player_two']['name']
+
+                player_one_ta = data['players']['player_one']['ta']
+                player_two_ta = data['players']['player_two']['ta']
+                
+                played = cmds.getCheckMatchup(player_one, player_two, player_one_ta, player_two_ta)
+
+                if not played:
+                    continue
+                else:
+                    with open(f'data/games/{game}.json', 'r') as game_file:
+                        game_data = json.load(game_file)
+
+                        outcome = game_data['outcome']['outcome_word']
+
+                        if outcome == 'win':
+                            if game_data['outcome']['winner']['name'] == data['bet_info']['bet_on']:
+                                won += 1
+                            else:
+                                lost += 1
+                        
+                        following_games = game_data['meta']['following_games']
+                        
+                        if len(following_games) > 0:
+                            for follow_game in following_games:
+                                with open(f'data/games/{follow_game}.json', 'r') as follow_game_file:
+                                    follow_data = json.load(follow_game_file)
+
+                                    outcome = follow_data['outcome']['outcome_word']
+
+                                    if outcome == 'win':
+                                        if follow_data['outcome']['winner']['name'] == data['bet_info']['bet_on']:
+                                            won += 1
+                                        else:
+                                            lost += 1
+                
+                    if won > lost:
+                        data['meta']['status'] = 'WON'
+                        win_amount = data['bet_info']['bet_amount'] * data['bet_info']['bet_odds']
+
+                        better = data['bet_info']['better_name']
+                        better_ta = data['bet_info']['better_ta']
+
+                        bigBrothersWallet(better, better_ta, 'out', win_amount)
+
+                        with open(f'data/players/{better}-{better_ta}.json', 'r') as player_file:
+                            player_data = json.load(player_file)
+
+                            player_data['bets']['balance'] += win_amount
+                            player_data['bets']['outstanding_bets'].remove(bet)
+                    
+                        player_outfile = json.dumps(player_data, indent=4)
+
+                        with open(f'data/players/{better}-{better_ta}.json', 'w') as player_f:
+                            player_f.write(player_outfile)
+
+                    elif won <= lost:
+                        data['meta']['status'] = 'LOST'
+
+                        better = data['bet_info']['better_name']
+                        better_ta = data['bet_info']['better_ta']
+
+                        with open(f'data/players/{better}-{better_ta}.json', 'r') as player_file:
+                            player_data = json.load(player_file)
+                            player_data['bets']['outstanding_bets'].remove(bet)
+                    
+                        player_outfile = json.dumps(player_data, indent=4)
+
+                        with open(f'data/players/{better}-{better_ta}.json', 'w') as player_f:
+                            player_f.write(player_outfile)
+                    
+                    bet_outfile = json.dumps(data, indent=4)
+
+                    with open(f'data/bets/{bet}.json', 'w') as bet_f:
+                        bet_f.write(bet_outfile)
