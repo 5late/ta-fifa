@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "id": "ryan_47_V_logan_47-800-christian_16-1672376573",
+        "date": "30/12/2022",
+        "ticks": 1672376573,
+        "status": "WON"
+    },
+    "bet_info": {
+        "better_name": "christian",
+        "better_ta": "16",
+        "better_grade": "12",
+        "bet_on": "ryan",
+        "bet_amount": 800,
+        "bet_odds": 1.11
+    },
+    "players": {
+        "player_one": {
+            "name": "ryan",
+            "ta": "47",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "logan",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}

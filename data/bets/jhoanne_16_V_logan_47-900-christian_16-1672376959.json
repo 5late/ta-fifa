@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "id": "jhoanne_16_V_logan_47-900-christian_16-1672376959",
+        "date": "30/12/2022",
+        "ticks": 1672376959,
+        "status": "LOST"
+    },
+    "bet_info": {
+        "better_name": "christian",
+        "better_ta": "16",
+        "better_grade": "12",
+        "bet_on": "jhoanne",
+        "bet_amount": 900,
+        "bet_odds": 8.09
+    },
+    "players": {
+        "player_one": {
+            "name": "jhoanne",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "logan",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}

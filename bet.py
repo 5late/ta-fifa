@@ -33,6 +33,7 @@ def printBalance():
     print('Your balance is: $$' + str(balance))
 
 def checkBalance(name='', ta=''):
+    consolidateBets()
     if len(name) == 0:
         name, ta, grade = cmds.getName('Enter Name [Ryan/Christian]: ').split('-')
 
@@ -53,6 +54,7 @@ def printOutstandingBets():
         print(f'You have a bet placed on the game: {bet_players} for amount $${bet_amount}.')
 
 def checkOutstandingBets(name='', ta=''):
+    consolidateBets()
     if len(name) == 0:
         name, ta, grade = cmds.getName('Enter Name: [Ryan/Christian]: ').split('-')
 
@@ -98,6 +100,7 @@ def bigBrothersWallet(name, ta, transaction_type, amount):
         f.write(outfile)
 
 def createBet(name='', ta=''):
+    consolidateBets()
     if len(name) == 0:
         name, ta, grade = cmds.getName('Enter Name [Ryan/Christian]: ').split('-')
 
@@ -108,13 +111,14 @@ def createBet(name='', ta=''):
 
     bet_amount_post_tax, fees = convertFees(bet_amount)
 
-    bigBrothersWallet(name, ta, 'in', bet_amount_post_tax) # take the money with taxes and fees
-
-    balance = checkBalance()
+    balance = checkBalance(name, ta)
 
     while bet_amount_post_tax > balance:
         print('You do not have that much money.')
         bet_amount = int(input('Enter the bet amount: '))
+        bet_amount_post_tax, fees = convertFees(bet_amount)
+
+    bigBrothersWallet(name, ta, 'in', bet_amount_post_tax) # take the money with taxes and fees
 
     bet_on = input('Who would you like to bet on?: ')
     while bet_on != player_one and bet_on != player_two:
@@ -184,6 +188,7 @@ def createBet(name='', ta=''):
     print(f'New Bet Created with ID: {id}')
 
 def removeBet(name='', ta=''):
+    consolidateBets()
     if len(name) == 0:
         name, ta, grade = cmds.getName('Enter Name [Ryan/Christian]: ').split('-')
 
