@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "fdd4e4df-8958-491e-97bb-d16d7d460cbe",
+        "date": "16/01/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "bcf1e7b0-a114-4e67-9c8c-d18de1a506f6"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "kelly",
+            "ta": "47",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "caio",
+            "ta": "16",
+            "grade": "9"
+        }
+    },
+    "first_mover": "kelly",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "kelly",
+            "ta": "47",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "caio",
+            "ta": "16",
+            "grade": "9"
+        }
+    }
+}
