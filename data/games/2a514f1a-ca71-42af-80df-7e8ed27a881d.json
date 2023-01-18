@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "2a514f1a-ca71-42af-80df-7e8ed27a881d",
+        "date": "17/01/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "d41c4469-3548-48ae-8c36-8175e4488a64"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "alizza",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "jillian",
+            "ta": "47",
+            "grade": "9"
+        }
+    },
+    "first_mover": "alizza",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jillian",
+            "ta": "47",
+            "grade": "9"
+        },
+        "loser": {
+            "name": "alizza",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}
