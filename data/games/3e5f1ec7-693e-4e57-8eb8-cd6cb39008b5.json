@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "3e5f1ec7-693e-4e57-8eb8-cd6cb39008b5",
+        "date": "17/01/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "834c2a79-b97f-4cae-b0eb-55e707dd12b9"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "christian",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "logan",
+            "ta": "47",
+            "grade": "12"
+        }
+    },
+    "first_mover": "logan",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "christian",
+            "ta": "16",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "logan",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}
