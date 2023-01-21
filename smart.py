@@ -15,7 +15,7 @@ def getTaWinRate():
     sanderson_won = 0
 
     for file in player_files:
-        if file[-4:] == 'json':
+        if file[-4:] == 'json' and 'BIG' not in file:
             file = 'data/players/' + file
             with open(file, 'r') as f:
                 data = json.load(f)
@@ -64,7 +64,7 @@ def getGradeWinRate():
     player_files = os.listdir('data/players')
 
     for file in player_files:
-        if file[-4:] == 'json':
+        if file[-4:] == 'json' and 'BIG' not in file:
             file = 'data/players/' + file
             with open(file, 'r') as f:
                 data = json.load(f)
