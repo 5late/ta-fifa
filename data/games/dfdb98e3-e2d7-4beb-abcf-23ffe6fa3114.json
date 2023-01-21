@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "dfdb98e3-e2d7-4beb-abcf-23ffe6fa3114",
+        "date": "21/01/2023",
+        "game_number": 2,
+        "previous_games": [
+            "eafd6319-9edf-4518-acef-380bdee862f2"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "fritz",
+            "ta": "36",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "isaiah",
+            "ta": "47",
+            "grade": "10"
+        }
+    },
+    "first_mover": "isaiah",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "isaiah",
+            "ta": "47",
+            "grade": "10"
+        },
+        "loser": {
+            "name": "fritz",
+            "ta": "36",
+            "grade": "12"
+        }
+    }
+}

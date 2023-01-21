@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "8ea6dd1a-6d1b-42ff-b645-8fc716cb254f",
+        "date": "21/01/2023",
+        "game_number": 2,
+        "previous_games": [
+            "614f0ef4-266b-43fe-9583-50d0dd657ca2"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "caio",
+            "ta": "16",
+            "grade": "9"
+        },
+        "player_two": {
+            "name": "chelsea",
+            "ta": "16",
+            "grade": "10"
+        }
+    },
+    "first_mover": "chelsea",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "chelsea",
+            "ta": "16",
+            "grade": "10"
+        },
+        "loser": {
+            "name": "caio",
+            "ta": "16",
+            "grade": "9"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "f5c8ada3-0228-4282-acf0-9a60766e7d77",
+        "date": "21/01/2023",
+        "game_number": 2,
+        "previous_games": [
+            "daa0cb59-13ea-4db4-a112-fdb2372d53d4"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "alizza",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "akeisha",
+            "ta": "47",
+            "grade": "9"
+        }
+    },
+    "first_mover": "akeisha",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "akeisha",
+            "ta": "47",
+            "grade": "9"
+        },
+        "loser": {
+            "name": "alizza",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

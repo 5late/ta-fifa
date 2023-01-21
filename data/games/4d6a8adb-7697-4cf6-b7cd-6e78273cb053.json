@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "4d6a8adb-7697-4cf6-b7cd-6e78273cb053",
+        "date": "21/01/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "1aed8a70-d5f6-4e5b-bad9-4f2d3c979271"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "shannon",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "nilayah",
+            "ta": "16",
+            "grade": "12"
+        }
+    },
+    "first_mover": "shannon",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "shannon",
+            "ta": "16",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "nilayah",
+            "ta": "16",
+            "grade": "12"
+        }
+    }
+}
