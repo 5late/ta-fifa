@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "001ad3ac-c8b2-4f27-8127-53af43d76595",
+        "date": "21/01/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "8551f513-a297-4c41-85b9-9a1bb5b2a191"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "makai",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "alen",
+            "ta": "36",
+            "grade": "11"
+        }
+    },
+    "first_mover": "makai",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "alen",
+            "ta": "36",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "makai",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

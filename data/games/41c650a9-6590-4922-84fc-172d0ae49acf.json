@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "41c650a9-6590-4922-84fc-172d0ae49acf",
+        "date": "21/01/2023",
+        "game_number": 2,
+        "previous_games": [
+            "23b46b26-ec4d-4224-81b7-f05f991de5ad"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "tyler",
+            "ta": "16",
+            "grade": "10"
+        },
+        "player_two": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        }
+    },
+    "first_mover": "flordyne",
+    "first_move": "d",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "tyler",
+            "ta": "16",
+            "grade": "10"
+        },
+        "loser": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}
