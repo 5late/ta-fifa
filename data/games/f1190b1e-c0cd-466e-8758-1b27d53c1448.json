@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "f1190b1e-c0cd-466e-8758-1b27d53c1448",
+        "date": "21/01/2023",
+        "game_number": 2,
+        "previous_games": [
+            "f8a6eba8-74a5-486e-836a-8fd910f4a041"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "bregar",
+            "ta": "47",
+            "grade": "13"
+        },
+        "player_two": {
+            "name": "jouie",
+            "ta": "36",
+            "grade": "11"
+        }
+    },
+    "first_mover": "jouie",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "bregar",
+            "ta": "47",
+            "grade": "13"
+        },
+        "loser": {
+            "name": "jouie",
+            "ta": "36",
+            "grade": "11"
+        }
+    }
+}

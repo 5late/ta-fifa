@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "937eb411-3a40-4332-84aa-177f6e62b66a",
+        "date": "21/01/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "d662df1a-da2c-4b08-94ee-49e033831a3a"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "gigi",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "noelani",
+            "ta": "47",
+            "grade": "10"
+        }
+    },
+    "first_mover": "gigi",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "gigi",
+            "ta": "16",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "noelani",
+            "ta": "47",
+            "grade": "10"
+        }
+    }
+}

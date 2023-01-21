@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "71693b3c-5838-4090-9574-8b5d9d7446b6",
+        "date": "21/01/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "4dcd3eca-2cf9-42b8-a88b-24d9331181d6"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "jervin",
+            "ta": "47",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "kaera",
+            "ta": "36",
+            "grade": "11"
+        }
+    },
+    "first_mover": "jervin",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jervin",
+            "ta": "47",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "kaera",
+            "ta": "36",
+            "grade": "11"
+        }
+    }
+}

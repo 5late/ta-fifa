@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "fa24ef6d-5d86-44e9-a7ea-3ca7724ba913",
+        "date": "21/01/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "5fdd28c0-0b77-4541-bc22-fc6611e5200f"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "sara",
+            "ta": "47",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "makai",
+            "ta": "16",
+            "grade": "11"
+        }
+    },
+    "first_mover": "sara",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "sara",
+            "ta": "47",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "makai",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "c4dbeb83-0bb0-46d7-a463-f3a3091b1f85",
+        "date": "21/01/2023",
+        "game_number": 2,
+        "previous_games": [
+            "a6d95d9b-8fb5-4ecc-ad0d-ffb6d79309ce"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "christian",
+            "ta": "47",
+            "grade": "10"
+        },
+        "player_two": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        }
+    },
+    "first_mover": "flordyne",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "christian",
+            "ta": "47",
+            "grade": "10"
+        }
+    }
+}
