@@ -6,12 +6,12 @@
         "grade": "11"
     },
     "stats": {
-        "played": 8,
+        "played": 10,
         "won": 0,
-        "lost": 8,
+        "lost": 10,
         "draws": 0
     },
-    "last_played": "21/12/2022",
+    "last_played": "23/01/2023",
     "games_played": [
         "c8b12377-3b4b-4e44-a9bf-8d753988149e",
         "32795d56-c0af-482a-8241-15126e4ec29b",
@@ -20,6 +20,8 @@
         "f711842c-7626-4d50-b799-154aec42bd82",
         "83d98224-7b37-4d21-99b4-e9d2557baa2e",
         "279d5c2c-7a34-4416-9fba-b604e5e9f3fb",
-        "67142a4a-eec6-441b-96e1-fa13503d824f"
+        "67142a4a-eec6-441b-96e1-fa13503d824f",
+        "200f3da4-c595-40ea-8415-331e2ad1a7ac",
+        "ec098538-19f3-4881-bcd7-55b61ce7805b"
     ]
 }
