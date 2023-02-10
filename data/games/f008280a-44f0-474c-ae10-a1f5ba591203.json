@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "f008280a-44f0-474c-ae10-a1f5ba591203",
+        "date": "09/02/2023",
+        "game_number": 2,
+        "previous_games": [
+            "be7fbaec-2c74-4487-a767-dda61a4e3f11"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "justine",
+            "ta": "36",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "jillian",
+            "ta": "47",
+            "grade": "9"
+        }
+    },
+    "first_mover": "jillian",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jillian",
+            "ta": "47",
+            "grade": "9"
+        },
+        "loser": {
+            "name": "justine",
+            "ta": "36",
+            "grade": "11"
+        }
+    }
+}

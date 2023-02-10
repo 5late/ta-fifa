@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "b53855d5-90b8-4dc8-a462-66f6c5449c18",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "tristan",
+            "ta": "36",
+            "grade": "9"
+        },
+        "player_two": {
+            "name": "daniel",
+            "ta": "47",
+            "grade": "9"
+        }
+    },
+    "first_mover": "tristan",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "tristan",
+            "ta": "36",
+            "grade": "9"
+        },
+        "loser": {
+            "name": "daniel",
+            "ta": "47",
+            "grade": "9"
+        }
+    }
+}

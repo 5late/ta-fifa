@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "ff74777e-eb8f-4cb7-9546-561da8bb2207",
+        "date": "09/02/2023",
+        "game_number": 2,
+        "previous_games": [
+            "ee9a82ab-628f-4819-8580-3695a73874e9"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "sam",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "vartan",
+            "ta": "16",
+            "grade": "11"
+        }
+    },
+    "first_mover": "vartan",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "sam",
+            "ta": "16",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "vartan",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

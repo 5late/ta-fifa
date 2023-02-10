@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "6a32e745-7148-4664-9ac2-8d44fc203a8f",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "gigi",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "tristan",
+            "ta": "16",
+            "grade": "11"
+        }
+    },
+    "first_mover": "gigi",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "gigi",
+            "ta": "16",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "tristan",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

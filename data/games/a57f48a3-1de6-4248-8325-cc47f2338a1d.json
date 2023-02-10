@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "a57f48a3-1de6-4248-8325-cc47f2338a1d",
+        "date": "09/02/2023",
+        "game_number": 2,
+        "previous_games": [
+            "2f80ca20-e779-49ad-b1b9-5a1e68ddfa41"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "sanderson",
+            "ta": "47",
+            "grade": "13"
+        },
+        "player_two": {
+            "name": "christian",
+            "ta": "47",
+            "grade": "10"
+        }
+    },
+    "first_mover": "christian",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "christian",
+            "ta": "47",
+            "grade": "10"
+        },
+        "loser": {
+            "name": "sanderson",
+            "ta": "47",
+            "grade": "13"
+        }
+    }
+}

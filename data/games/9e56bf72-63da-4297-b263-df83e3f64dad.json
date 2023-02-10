@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "9e56bf72-63da-4297-b263-df83e3f64dad",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "0570c13e-7025-46cb-811a-64a5939de229"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "jalen",
+            "ta": "36",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "chelsea",
+            "ta": "16",
+            "grade": "10"
+        }
+    },
+    "first_mover": "jalen",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jalen",
+            "ta": "36",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "chelsea",
+            "ta": "16",
+            "grade": "10"
+        }
+    }
+}

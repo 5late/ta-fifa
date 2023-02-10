@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "version": "1.0.1",
+        "name": "justine",
+        "ta": "36",
+        "grade": "11"
+    },
+    "stats": {
+        "played": 9,
+        "won": 6,
+        "lost": 3,
+        "draws": 0
+    },
+    "last_played": "09/02/2023",
+    "games_played": [
+        "7e4b19f6-f1a3-4ef8-87b7-bc35f5442e1d",
+        "1a3f8da4-ccf2-421a-b890-ba6a96b8de8b",
+        "be7fbaec-2c74-4487-a767-dda61a4e3f11",
+        "f008280a-44f0-474c-ae10-a1f5ba591203",
+        "b9ed49c5-2edd-445f-b589-71af6f7ce186",
+        "ca6a40b6-ed13-49fa-a6ce-cd4da59a2fee",
+        "2b765b68-70a3-4757-86ec-1e1f30a83682",
+        "d3a488a1-8ecc-47f4-b254-abdb77a705a2",
+        "9d6f573e-ebbf-484a-a7e2-c5aa478fb84a"
+    ]
+}

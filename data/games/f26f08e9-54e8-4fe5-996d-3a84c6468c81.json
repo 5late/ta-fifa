@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "f26f08e9-54e8-4fe5-996d-3a84c6468c81",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "aidan",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "daniel",
+            "ta": "47",
+            "grade": "9"
+        }
+    },
+    "first_mover": "aidan",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "aidan",
+            "ta": "16",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "daniel",
+            "ta": "47",
+            "grade": "9"
+        }
+    }
+}

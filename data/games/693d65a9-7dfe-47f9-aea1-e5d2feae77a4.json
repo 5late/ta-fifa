@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "693d65a9-7dfe-47f9-aea1-e5d2feae77a4",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "rhemy",
+            "ta": "36",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "tristan",
+            "ta": "16",
+            "grade": "11"
+        }
+    },
+    "first_mover": "rhemy",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "rhemy",
+            "ta": "36",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "tristan",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

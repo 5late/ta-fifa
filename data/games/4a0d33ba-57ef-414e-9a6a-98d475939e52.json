@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "4a0d33ba-57ef-414e-9a6a-98d475939e52",
+        "date": "09/02/2023",
+        "game_number": 2,
+        "previous_games": [
+            "c35851b0-b8a6-4d2f-9c72-efe15928b048"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "sara",
+            "ta": "47",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        }
+    },
+    "first_mover": "flordyne",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "flordyne",
+            "ta": "47",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "sara",
+            "ta": "47",
+            "grade": "12"
+        }
+    }
+}

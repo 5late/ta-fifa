@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "b1a100fa-6c43-471a-847e-a89a818318fc",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "383df0bf-5764-4c21-a50e-01339d98dad2"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "maya",
+            "ta": "36",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "johnathan",
+            "ta": "47",
+            "grade": "10"
+        }
+    },
+    "first_mover": "maya",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "johnathan",
+            "ta": "47",
+            "grade": "10"
+        },
+        "loser": {
+            "name": "maya",
+            "ta": "36",
+            "grade": "11"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "73b33e14-2011-4f35-9481-604ba80f2098",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": [
+            "eda65eb0-b0d2-4ae4-a6ed-e89e9b4dc4d2"
+        ]
+    },
+    "players": {
+        "player_one": {
+            "name": "kip",
+            "ta": "36",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "jalen",
+            "ta": "36",
+            "grade": "11"
+        }
+    },
+    "first_mover": "kip",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "kip",
+            "ta": "36",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "jalen",
+            "ta": "36",
+            "grade": "11"
+        }
+    }
+}

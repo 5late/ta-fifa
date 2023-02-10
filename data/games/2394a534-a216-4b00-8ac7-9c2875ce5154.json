@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "2394a534-a216-4b00-8ac7-9c2875ce5154",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "dana",
+            "ta": "36",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "weathers",
+            "ta": "16",
+            "grade": "13"
+        }
+    },
+    "first_mover": "weathers",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "weathers",
+            "ta": "16",
+            "grade": "13"
+        },
+        "loser": {
+            "name": "dana",
+            "ta": "36",
+            "grade": "11"
+        }
+    }
+}

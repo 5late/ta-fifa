@@ -1,0 +1,39 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "42e685da-95f2-4f7c-b849-17d7f23921dc",
+        "date": "09/02/2023",
+        "game_number": 2,
+        "previous_games": [
+            "2b8fdf9f-cf29-4a1c-9a66-5fc7fcb0477a"
+        ],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "caio",
+            "ta": "16",
+            "grade": "9"
+        },
+        "player_two": {
+            "name": "kip",
+            "ta": "36",
+            "grade": "11"
+        }
+    },
+    "first_mover": "kip",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "kip",
+            "ta": "36",
+            "grade": "11"
+        },
+        "loser": {
+            "name": "caio",
+            "ta": "16",
+            "grade": "9"
+        }
+    }
+}

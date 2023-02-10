@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "5c4ef95f-16d5-4217-a614-b4de70aa6e9e",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "jhevon",
+            "ta": "16",
+            "grade": "12"
+        },
+        "player_two": {
+            "name": "daniel",
+            "ta": "47",
+            "grade": "9"
+        }
+    },
+    "first_mover": "jhevon",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "jhevon",
+            "ta": "16",
+            "grade": "12"
+        },
+        "loser": {
+            "name": "daniel",
+            "ta": "47",
+            "grade": "9"
+        }
+    }
+}

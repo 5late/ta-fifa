@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "3d6a6abb-2b4a-4f85-b8ff-abdd8710f06c",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "tristan",
+            "ta": "16",
+            "grade": "11"
+        },
+        "player_two": {
+            "name": "bregar",
+            "ta": "47",
+            "grade": "13"
+        }
+    },
+    "first_mover": "bregar",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "bregar",
+            "ta": "47",
+            "grade": "13"
+        },
+        "loser": {
+            "name": "tristan",
+            "ta": "16",
+            "grade": "11"
+        }
+    }
+}

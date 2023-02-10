@@ -1,0 +1,37 @@
+{
+    "meta": {
+        "version": "1.0.4",
+        "game_id": "d66c7201-5112-4337-9ce0-4fee99bc5472",
+        "date": "09/02/2023",
+        "game_number": 1,
+        "previous_games": [],
+        "following_games": []
+    },
+    "players": {
+        "player_one": {
+            "name": "erika",
+            "ta": "47",
+            "grade": "10"
+        },
+        "player_two": {
+            "name": "daniel",
+            "ta": "47",
+            "grade": "9"
+        }
+    },
+    "first_mover": "erika",
+    "first_move": "unknown",
+    "outcome": {
+        "outcome_word": "win",
+        "winner": {
+            "name": "erika",
+            "ta": "47",
+            "grade": "10"
+        },
+        "loser": {
+            "name": "daniel",
+            "ta": "47",
+            "grade": "9"
+        }
+    }
+}
